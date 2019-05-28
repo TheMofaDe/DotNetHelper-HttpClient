@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Services
+  commentId: N:DotNetHelper_HttpClient.Services
+  id: DotNetHelper_HttpClient.Services
+  children:
+  - DotNetHelper_HttpClient.Services.HttpRestfulClient
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_HttpClient.Services
+  nameWithType: DotNetHelper_HttpClient.Services
+  fullName: DotNetHelper_HttpClient.Services
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient
+  commentId: T:DotNetHelper_HttpClient.Services.HttpRestfulClient
+  name: HttpRestfulClient
+  nameWithType: HttpRestfulClient
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient

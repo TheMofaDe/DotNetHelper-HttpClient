@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Enum
+  commentId: N:DotNetHelper_HttpClient.Enum
+  id: DotNetHelper_HttpClient.Enum
+  children:
+  - DotNetHelper_HttpClient.Enum.ParameterType
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_HttpClient.Enum
+  nameWithType: DotNetHelper_HttpClient.Enum
+  fullName: DotNetHelper_HttpClient.Enum
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_HttpClient.Enum.ParameterType
+  commentId: T:DotNetHelper_HttpClient.Enum.ParameterType
+  parent: DotNetHelper_HttpClient.Enum
+  name: ParameterType
+  nameWithType: ParameterType
+  fullName: DotNetHelper_HttpClient.Enum.ParameterType
+- uid: DotNetHelper_HttpClient.Enum
+  commentId: N:DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  nameWithType: DotNetHelper_HttpClient.Enum
+  fullName: DotNetHelper_HttpClient.Enum

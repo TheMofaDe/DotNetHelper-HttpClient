@@ -1,0 +1,668 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Models.Parameter
+  commentId: T:DotNetHelper_HttpClient.Models.Parameter
+  id: Parameter
+  parent: DotNetHelper_HttpClient.Models
+  children:
+  - DotNetHelper_HttpClient.Models.Parameter.#ctor(DotNetHelper_HttpClient.Enum.ParameterType)
+  - DotNetHelper_HttpClient.Models.Parameter.ContentType
+  - DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+  - DotNetHelper_HttpClient.Models.Parameter.Name
+  - DotNetHelper_HttpClient.Models.Parameter.ToString
+  - DotNetHelper_HttpClient.Models.Parameter.Type
+  - DotNetHelper_HttpClient.Models.Parameter.Value
+  langs:
+  - csharp
+  - vb
+  name: Parameter
+  nameWithType: Parameter
+  fullName: DotNetHelper_HttpClient.Models.Parameter
+  type: Class
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Parameter
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nParameter container for REST requests\n"
+  example: []
+  syntax:
+    content: public class Parameter
+    content.vb: Public Class Parameter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DotNetHelper_HttpClient.Models.Parameter.Name
+  commentId: P:DotNetHelper_HttpClient.Models.Parameter.Name
+  id: Name
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Parameter.Name
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Name
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Name
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 14
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nName of the parameter\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The name.
+    content.vb: Public Property Name As String
+  overload: DotNetHelper_HttpClient.Models.Parameter.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.Value
+  commentId: P:DotNetHelper_HttpClient.Models.Parameter.Value
+  id: Value
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Parameter.Value
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Value
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Value
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 20
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nValue of the parameter\n"
+  example: []
+  syntax:
+    content: public object Value { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+      description: The value.
+    content.vb: Public Property Value As Object
+  overload: DotNetHelper_HttpClient.Models.Parameter.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.Type
+  commentId: P:DotNetHelper_HttpClient.Models.Parameter.Type
+  id: Type
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Parameter.Type
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Type
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Type
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 26
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nType of the parameter\n"
+  example: []
+  syntax:
+    content: public ParameterType Type { get; set; }
+    parameters: []
+    return:
+      type: DotNetHelper_HttpClient.Enum.ParameterType
+      description: The type.
+    content.vb: Public Property Type As ParameterType
+  overload: DotNetHelper_HttpClient.Models.Parameter.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.ContentType
+  commentId: P:DotNetHelper_HttpClient.Models.Parameter.ContentType
+  id: ContentType
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: Parameter.ContentType
+  fullName: DotNetHelper_HttpClient.Models.Parameter.ContentType
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: ContentType
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 32
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nMIME content type of the parameter\n"
+  example: []
+  syntax:
+    content: public string ContentType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The type of the content.
+    content.vb: Public Property ContentType As String
+  overload: DotNetHelper_HttpClient.Models.Parameter.ContentType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+  commentId: P:DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+  id: EscapeValue
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: EscapeValue
+  nameWithType: Parameter.EscapeValue
+  fullName: DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: EscapeValue
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 34
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  syntax:
+    content: public bool EscapeValue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EscapeValue As Boolean
+  overload: DotNetHelper_HttpClient.Models.Parameter.EscapeValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.#ctor(DotNetHelper_HttpClient.Enum.ParameterType)
+  commentId: M:DotNetHelper_HttpClient.Models.Parameter.#ctor(DotNetHelper_HttpClient.Enum.ParameterType)
+  id: '#ctor(DotNetHelper_HttpClient.Enum.ParameterType)'
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: Parameter(ParameterType)
+  nameWithType: Parameter.Parameter(ParameterType)
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Parameter(DotNetHelper_HttpClient.Enum.ParameterType)
+  type: Constructor
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: .ctor
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 39
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  syntax:
+    content: public Parameter(ParameterType type)
+    parameters:
+    - id: type
+      type: DotNetHelper_HttpClient.Enum.ParameterType
+    content.vb: Public Sub New(type As ParameterType)
+  overload: DotNetHelper_HttpClient.Models.Parameter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_HttpClient.Models.Parameter.ToString
+  commentId: M:DotNetHelper_HttpClient.Models.Parameter.ToString
+  id: ToString
+  parent: DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Parameter.ToString()
+  fullName: DotNetHelper_HttpClient.Models.Parameter.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Models/Parameter.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: ToString
+    path: ../src/DotNetHelper-HttpClient/Models/Parameter.cs
+    startLine: 48
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Models
+  summary: "\nReturn a human-readable representation of this parameter\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: DotNetHelper_HttpClient.Models.Parameter.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: DotNetHelper_HttpClient.Models
+  commentId: N:DotNetHelper_HttpClient.Models
+  name: DotNetHelper_HttpClient.Models
+  nameWithType: DotNetHelper_HttpClient.Models
+  fullName: DotNetHelper_HttpClient.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_HttpClient.Models.Parameter.Name*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.Name
+  name: Name
+  nameWithType: Parameter.Name
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper_HttpClient.Models.Parameter.Value*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.Value
+  name: Value
+  nameWithType: Parameter.Value
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Value
+- uid: DotNetHelper_HttpClient.Models.Parameter.Type*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.Type
+  name: Type
+  nameWithType: Parameter.Type
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Type
+- uid: DotNetHelper_HttpClient.Enum.ParameterType
+  commentId: T:DotNetHelper_HttpClient.Enum.ParameterType
+  parent: DotNetHelper_HttpClient.Enum
+  name: ParameterType
+  nameWithType: ParameterType
+  fullName: DotNetHelper_HttpClient.Enum.ParameterType
+- uid: DotNetHelper_HttpClient.Enum
+  commentId: N:DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  nameWithType: DotNetHelper_HttpClient.Enum
+  fullName: DotNetHelper_HttpClient.Enum
+- uid: DotNetHelper_HttpClient.Models.Parameter.ContentType*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.ContentType
+  name: ContentType
+  nameWithType: Parameter.ContentType
+  fullName: DotNetHelper_HttpClient.Models.Parameter.ContentType
+- uid: DotNetHelper_HttpClient.Models.Parameter.EscapeValue*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+  name: EscapeValue
+  nameWithType: Parameter.EscapeValue
+  fullName: DotNetHelper_HttpClient.Models.Parameter.EscapeValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DotNetHelper_HttpClient.Models.Parameter.#ctor*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.#ctor
+  name: Parameter
+  nameWithType: Parameter.Parameter
+  fullName: DotNetHelper_HttpClient.Models.Parameter.Parameter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Models.Parameter.ToString*
+  commentId: Overload:DotNetHelper_HttpClient.Models.Parameter.ToString
+  name: ToString
+  nameWithType: Parameter.ToString
+  fullName: DotNetHelper_HttpClient.Models.Parameter.ToString

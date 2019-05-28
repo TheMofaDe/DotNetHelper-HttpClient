@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Extension
+  commentId: N:DotNetHelper_HttpClient.Extension
+  id: DotNetHelper_HttpClient.Extension
+  children:
+  - DotNetHelper_HttpClient.Extension.MethodExtension
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_HttpClient.Extension
+  nameWithType: DotNetHelper_HttpClient.Extension
+  fullName: DotNetHelper_HttpClient.Extension
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_HttpClient.Extension.MethodExtension
+  commentId: T:DotNetHelper_HttpClient.Extension.MethodExtension
+  parent: DotNetHelper_HttpClient.Extension
+  name: MethodExtension
+  nameWithType: MethodExtension
+  fullName: DotNetHelper_HttpClient.Extension.MethodExtension
+- uid: DotNetHelper_HttpClient.Extension
+  commentId: N:DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  nameWithType: DotNetHelper_HttpClient.Extension
+  fullName: DotNetHelper_HttpClient.Extension

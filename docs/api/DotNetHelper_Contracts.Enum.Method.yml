@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Contracts.Enum.Method
+  commentId: T:DotNetHelper_Contracts.Enum.Method
+  id: Method
+  parent: DotNetHelper_Contracts.Enum
+  children:
+  - DotNetHelper_Contracts.Enum.Method.Delete
+  - DotNetHelper_Contracts.Enum.Method.Get
+  - DotNetHelper_Contracts.Enum.Method.Head
+  - DotNetHelper_Contracts.Enum.Method.Option
+  - DotNetHelper_Contracts.Enum.Method.Post
+  - DotNetHelper_Contracts.Enum.Method.Put
+  - DotNetHelper_Contracts.Enum.Method.Trace
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: Method
+  fullName: DotNetHelper_Contracts.Enum.Method
+  type: Enum
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Method
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 26
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  summary: "\nHTTP method to use when making requests\n"
+  example: []
+  syntax:
+    content: public enum Method
+    content.vb: Public Enum Method
+  extensionMethods:
+  - DotNetHelper_Contracts.Enum.Method.DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DotNetHelper_Contracts.Enum.Method.Get
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Get
+  id: Get
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Get
+  nameWithType: Method.Get
+  fullName: DotNetHelper_Contracts.Enum.Method.Get
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Get
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 31
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  summary: "\nThe get\n"
+  example: []
+  syntax:
+    content: Get = 0
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Post
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Post
+  id: Post
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Post
+  nameWithType: Method.Post
+  fullName: DotNetHelper_Contracts.Enum.Method.Post
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Post
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 35
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  summary: "\nThe post\n"
+  example: []
+  syntax:
+    content: Post = 1
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Put
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Put
+  id: Put
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Put
+  nameWithType: Method.Put
+  fullName: DotNetHelper_Contracts.Enum.Method.Put
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Put
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 39
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  summary: "\nThe put\n"
+  example: []
+  syntax:
+    content: Put = 2
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Delete
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Delete
+  id: Delete
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: Method.Delete
+  fullName: DotNetHelper_Contracts.Enum.Method.Delete
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Delete
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 43
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  summary: "\nThe delete\n"
+  example: []
+  syntax:
+    content: Delete = 3
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Head
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Head
+  id: Head
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Head
+  nameWithType: Method.Head
+  fullName: DotNetHelper_Contracts.Enum.Method.Head
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Head
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 48
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  syntax:
+    content: Head = 4
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Option
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Option
+  id: Option
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Option
+  nameWithType: Method.Option
+  fullName: DotNetHelper_Contracts.Enum.Method.Option
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Option
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 49
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  syntax:
+    content: Option = 5
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Contracts.Enum.Method.Trace
+  commentId: F:DotNetHelper_Contracts.Enum.Method.Trace
+  id: Trace
+  parent: DotNetHelper_Contracts.Enum.Method
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: Method.Trace
+  fullName: DotNetHelper_Contracts.Enum.Method.Trace
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Enum/ContentType.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Trace
+    path: ../src/DotNetHelper-HttpClient/Enum/ContentType.cs
+    startLine: 50
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_Contracts.Enum
+  syntax:
+    content: Trace = 6
+    return:
+      type: DotNetHelper_Contracts.Enum.Method
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DotNetHelper_Contracts.Enum
+  commentId: N:DotNetHelper_Contracts.Enum
+  name: DotNetHelper_Contracts.Enum
+  nameWithType: DotNetHelper_Contracts.Enum
+  fullName: DotNetHelper_Contracts.Enum
+- uid: DotNetHelper_Contracts.Enum.Method.DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  commentId: M:DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  parent: DotNetHelper_HttpClient.Extension.MethodExtension
+  definition: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  name: MapToHttpMethod()
+  nameWithType: MethodExtension.MapToHttpMethod()
+  fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod()
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+    name: MapToHttpMethod
+    nameWithType: MethodExtension.MapToHttpMethod
+    fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+    name: MapToHttpMethod
+    nameWithType: MethodExtension.MapToHttpMethod
+    fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  commentId: M:DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  name: MapToHttpMethod(Method)
+  nameWithType: MethodExtension.MapToHttpMethod(Method)
+  fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+    name: MapToHttpMethod
+    nameWithType: MethodExtension.MapToHttpMethod
+    fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DotNetHelper_Contracts.Enum.Method
+    name: Method
+    nameWithType: Method
+    fullName: DotNetHelper_Contracts.Enum.Method
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+    name: MapToHttpMethod
+    nameWithType: MethodExtension.MapToHttpMethod
+    fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DotNetHelper_Contracts.Enum.Method
+    name: Method
+    nameWithType: Method
+    fullName: DotNetHelper_Contracts.Enum.Method
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.MethodExtension
+  commentId: T:DotNetHelper_HttpClient.Extension.MethodExtension
+  parent: DotNetHelper_HttpClient.Extension
+  name: MethodExtension
+  nameWithType: MethodExtension
+  fullName: DotNetHelper_HttpClient.Extension.MethodExtension
+- uid: DotNetHelper_HttpClient.Extension
+  commentId: N:DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  nameWithType: DotNetHelper_HttpClient.Extension
+  fullName: DotNetHelper_HttpClient.Extension
+- uid: DotNetHelper_Contracts.Enum.Method
+  commentId: T:DotNetHelper_Contracts.Enum.Method
+  parent: DotNetHelper_Contracts.Enum
+  name: Method
+  nameWithType: Method
+  fullName: DotNetHelper_Contracts.Enum.Method

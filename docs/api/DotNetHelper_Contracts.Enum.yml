@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Contracts.Enum
+  commentId: N:DotNetHelper_Contracts.Enum
+  id: DotNetHelper_Contracts.Enum
+  children:
+  - DotNetHelper_Contracts.Enum.ContentType
+  - DotNetHelper_Contracts.Enum.Method
+  - DotNetHelper_Contracts.Enum.ServerSideApiObjectType
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_Contracts.Enum
+  nameWithType: DotNetHelper_Contracts.Enum
+  fullName: DotNetHelper_Contracts.Enum
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_Contracts.Enum.ContentType
+  commentId: T:DotNetHelper_Contracts.Enum.ContentType
+  parent: DotNetHelper_Contracts.Enum
+  name: ContentType
+  nameWithType: ContentType
+  fullName: DotNetHelper_Contracts.Enum.ContentType
+- uid: DotNetHelper_Contracts.Enum.ServerSideApiObjectType
+  commentId: T:DotNetHelper_Contracts.Enum.ServerSideApiObjectType
+  parent: DotNetHelper_Contracts.Enum
+  name: ServerSideApiObjectType
+  nameWithType: ServerSideApiObjectType
+  fullName: DotNetHelper_Contracts.Enum.ServerSideApiObjectType
+- uid: DotNetHelper_Contracts.Enum.Method
+  commentId: T:DotNetHelper_Contracts.Enum.Method
+  parent: DotNetHelper_Contracts.Enum
+  name: Method
+  nameWithType: Method
+  fullName: DotNetHelper_Contracts.Enum.Method
+- uid: DotNetHelper_Contracts.Enum
+  commentId: N:DotNetHelper_Contracts.Enum
+  name: DotNetHelper_Contracts.Enum
+  nameWithType: DotNetHelper_Contracts.Enum
+  fullName: DotNetHelper_Contracts.Enum

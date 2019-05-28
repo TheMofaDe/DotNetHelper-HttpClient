@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Models
+  commentId: N:DotNetHelper_HttpClient.Models
+  id: DotNetHelper_HttpClient.Models
+  children:
+  - DotNetHelper_HttpClient.Models.Parameter
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_HttpClient.Models
+  nameWithType: DotNetHelper_HttpClient.Models
+  fullName: DotNetHelper_HttpClient.Models
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_HttpClient.Models.Parameter
+  commentId: T:DotNetHelper_HttpClient.Models.Parameter
+  name: Parameter
+  nameWithType: Parameter
+  fullName: DotNetHelper_HttpClient.Models.Parameter

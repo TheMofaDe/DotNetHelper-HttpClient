@@ -18,10 +18,10 @@
     <Authors>Joseph McNeal Jr</Authors>
     <PackageTags>Dotnethelper</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TheMofaDe/DotNetHelper-HttpClient</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl></RepositoryUrl>
+    <RepositoryUrl>https://github.com/TheMofaDe/DotNetHelper-HttpClient</RepositoryUrl>
     <RootNamespace>DotNetHelper_HttpClient</RootNamespace>
     <AssemblyName>DotNetHelper-HttpClient</AssemblyName>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -52,7 +52,7 @@
   
   
   <ItemGroup>
-    <None Include="..\LICENSE.md">
+    <None Include="..\..\LICENSE.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>

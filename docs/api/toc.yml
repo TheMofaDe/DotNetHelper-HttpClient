@@ -1,0 +1,44 @@
+### YamlMime:TableOfContent
+- uid: DotNetHelper_Contracts.Enum
+  name: DotNetHelper_Contracts.Enum
+  items:
+  - uid: DotNetHelper_Contracts.Enum.ContentType
+    name: ContentType
+  - uid: DotNetHelper_Contracts.Enum.Method
+    name: Method
+  - uid: DotNetHelper_Contracts.Enum.ServerSideApiObjectType
+    name: ServerSideApiObjectType
+- uid: DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  items:
+  - uid: DotNetHelper_HttpClient.Enum.ParameterType
+    name: ParameterType
+- uid: DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  items:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension
+    name: MethodExtension
+- uid: DotNetHelper_HttpClient.Helpers
+  name: DotNetHelper_HttpClient.Helpers
+  items:
+  - uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+    name: HttpContentHelper
+  - uid: DotNetHelper_HttpClient.Helpers.URLHelper
+    name: URLHelper
+- uid: DotNetHelper_HttpClient.Interface
+  name: DotNetHelper_HttpClient.Interface
+  items:
+  - uid: DotNetHelper_HttpClient.Interface.IJsonDeserializer
+    name: IJsonDeserializer
+  - uid: DotNetHelper_HttpClient.Interface.IRestfulClient
+    name: IRestfulClient
+- uid: DotNetHelper_HttpClient.Models
+  name: DotNetHelper_HttpClient.Models
+  items:
+  - uid: DotNetHelper_HttpClient.Models.Parameter
+    name: Parameter
+- uid: DotNetHelper_HttpClient.Services
+  name: DotNetHelper_HttpClient.Services
+  items:
+  - uid: DotNetHelper_HttpClient.Services.HttpRestfulClient
+    name: HttpRestfulClient

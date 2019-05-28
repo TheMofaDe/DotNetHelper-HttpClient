@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  commentId: T:DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  id: HttpContentHelper
+  parent: DotNetHelper_HttpClient.Helpers
+  children:
+  - DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent(System.String,System.String,System.Text.Encoding)
+  - DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String)
+  - DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String,System.String,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: HttpContentHelper
+  nameWithType: HttpContentHelper
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  type: Class
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: HttpContentHelper
+    path: ../src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+    startLine: 6
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Helpers
+  syntax:
+    content: public static class HttpContentHelper
+    content.vb: Public Module HttpContentHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String,System.String,System.Text.Encoding)
+  commentId: M:DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String,System.String,System.Text.Encoding)
+  id: CreateStringContent(System.String,System.String,System.Text.Encoding)
+  parent: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateStringContent(String, String, Encoding)
+  nameWithType: HttpContentHelper.CreateStringContent(String, String, Encoding)
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: CreateStringContent
+    path: ../src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+    startLine: 16
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Helpers
+  summary: "\nCreates the content of the HTTP.\n"
+  example: []
+  syntax:
+    content: public static HttpContent CreateStringContent(string value, string mediaType, Encoding encoding)
+    parameters:
+    - id: value
+      type: System.String
+    - id: mediaType
+      type: System.String
+      description: Type of the media.
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.Net.Http.HttpContent
+      description: HttpContent.
+    content.vb: Public Shared Function CreateStringContent(value As String, mediaType As String, encoding As Encoding) As HttpContent
+  overload: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String)
+  commentId: M:DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String)
+  id: CreateStringContent(System.String)
+  parent: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateStringContent(String)
+  nameWithType: HttpContentHelper.CreateStringContent(String)
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: CreateStringContent
+    path: ../src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+    startLine: 27
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Helpers
+  summary: "\nCreates the content of the HTTP.\n"
+  example: []
+  syntax:
+    content: public static HttpContent CreateStringContent(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Net.Http.HttpContent
+      description: HttpContent.
+    content.vb: Public Shared Function CreateStringContent(value As String) As HttpContent
+  overload: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent(System.String,System.String,System.Text.Encoding)
+  commentId: M:DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent(System.String,System.String,System.Text.Encoding)
+  id: CreateByteArrayContent(System.String,System.String,System.Text.Encoding)
+  parent: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateByteArrayContent(String, String, Encoding)
+  nameWithType: HttpContentHelper.CreateByteArrayContent(String, String, Encoding)
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: CreateByteArrayContent
+    path: ../src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
+    startLine: 39
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Helpers
+  summary: "\nCreates the content of the HTTP.\n"
+  example: []
+  syntax:
+    content: public static ByteArrayContent CreateByteArrayContent(string value, string mediaType, Encoding encoding)
+    parameters:
+    - id: value
+      type: System.String
+    - id: mediaType
+      type: System.String
+      description: Type of the media.
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.Net.Http.ByteArrayContent
+      description: HttpContent.
+    content.vb: Public Shared Function CreateByteArrayContent(value As String, mediaType As String, encoding As Encoding) As ByteArrayContent
+  overload: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DotNetHelper_HttpClient.Helpers
+  commentId: N:DotNetHelper_HttpClient.Helpers
+  name: DotNetHelper_HttpClient.Helpers
+  nameWithType: DotNetHelper_HttpClient.Helpers
+  fullName: DotNetHelper_HttpClient.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent*
+  commentId: Overload:DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent
+  name: CreateStringContent
+  nameWithType: HttpContentHelper.CreateStringContent
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent*
+  commentId: Overload:DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent
+  name: CreateByteArrayContent
+  nameWithType: HttpContentHelper.CreateByteArrayContent
+  fullName: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateByteArrayContent
+- uid: System.Net.Http.ByteArrayContent
+  commentId: T:System.Net.Http.ByteArrayContent
+  parent: System.Net.Http
+  isExternal: true
+  name: ByteArrayContent
+  nameWithType: ByteArrayContent
+  fullName: System.Net.Http.ByteArrayContent
