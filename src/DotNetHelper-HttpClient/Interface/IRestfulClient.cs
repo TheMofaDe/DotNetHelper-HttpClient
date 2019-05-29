@@ -1,45 +1,14 @@
-﻿// ***********************************************************************
-// Assembly         : TheMoFaDe:
-// Author           : Joseph McNeal Jr 
-// Created          : 02-10-2017
-//
-// Last Modified By : Joseph McNeal Jr
-// Last Modified On : 09-04-2017
-// ***********************************************************************
-// <copyright>
-//             Copyright (C) 2017 Joseph McNeal Jr - All Rights Reserved
-//             You may use, distribute and modify this code under the
-//             terms of the TheMoFaDe: license,
-//             You should have received a copy of the TheMoFaDe: license with
-//             this file. If not, please write to: josephmcnealjr@mofade.com
-//</copyright>
-// <summary>   </summary>
-// ***********************************************************************
-
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Xml;
 using DotNetHelper_Contracts.Enum;
 using DotNetHelper_HttpClient.Models;
-using Polly;
 
 namespace DotNetHelper_HttpClient.Interface
 {
     public interface IRestfulClient
     {
-
- 
-
-  
-   
-
-
-
         /// <summary>
         /// execute get response as an asynchronous operation.
         /// </summary>

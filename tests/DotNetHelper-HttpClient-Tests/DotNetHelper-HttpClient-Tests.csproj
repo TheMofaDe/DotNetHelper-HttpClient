@@ -4,6 +4,8 @@
     <TargetFramework>net452</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>DotNetHelper_HttpClient_Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

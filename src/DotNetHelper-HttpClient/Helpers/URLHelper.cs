@@ -80,18 +80,22 @@ namespace DotNetHelper_HttpClient.Helpers
                     {
                         continue;
                     }
-                    if (resource.Contains("=") && resource.EndsWith("&"))
-                    {
-                        resource += $"{param.Name}={value}&";
-                    }
-                    else if (string.IsNullOrEmpty(resource))
+                    if (string.IsNullOrEmpty(resource))
                     {
                         baseurl = baseurl.Contains("?") ? baseurl : baseurl + "?";
                         resource += $"{param.Name}={value}&";
                     }
-                    else
+                    else if (resource.Contains("=") && resource.EndsWith("&"))
+                    {
+                        resource += $"{param.Name}={value}&";
+                    }
+                    else if (resource.Contains("=") && !resource.EndsWith("&"))
                     {
                         resource += $"&{param.Name}={value}&";
+                    }
+                    else
+                    {
+                        resource += $"{param.Name}={value}&";
                     }
 
                 }
@@ -101,7 +105,6 @@ namespace DotNetHelper_HttpClient.Helpers
             if (resource != null && resource.Contains(" "))
             {
 
-                // resource = UrlEscape(resource);
             }
             return baseurl + resource;
         }

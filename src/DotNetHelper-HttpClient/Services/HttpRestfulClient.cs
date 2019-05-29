@@ -1,12 +1,9 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
+ using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -584,20 +581,14 @@ namespace DotNetHelper_HttpClient.Services
             Stream stream = null;
             Task.Run(async () =>
             {
-               // using (Client)
-               // {
                     var response = await DoWorkAsync(method, url,headers,content);
                     // Check that response was successful or throw exception
                     EnsureSuccessCodeAsync(response);
                     await response.Content.LoadIntoBufferAsync();
                     stream = await response.Content.ReadAsStreamAsync();
                     stream.Position = 0;
-
-              //  }
             }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
             return stream;
-            //return new MemoryStream(encoding.GetBytes(result)){Position = 0}; 
-
         }
 
 
@@ -743,18 +734,8 @@ namespace DotNetHelper_HttpClient.Services
         /// <exception cref="Exception"></exception>
         private void EnsureSuccessCodeAsync(HttpResponseMessage response)
         {
-            // Check that response was successful or throw exception
-
             if (AlwaysEnsureSuccessCode)
-                try
-                {
-                    response.EnsureSuccessStatusCode();
-                }
-                catch (Exception e)
-                {
-                    var reason = $"HttpClient Failure Status Code : {response.StatusCode} , Reason Phrase : {response.ReasonPhrase}, URL : {response.RequestMessage.RequestUri} ";
-                    throw new Exception(reason + "   " + e.Message);
-                }
+                response.EnsureSuccessStatusCode();
         }
 
     }
