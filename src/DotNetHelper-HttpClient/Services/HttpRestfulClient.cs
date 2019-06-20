@@ -9,7 +9,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
-using DotNetHelper_Contracts.Enum;
 using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Extension;
 using DotNetHelper_HttpClient.Helpers;
@@ -67,27 +66,18 @@ namespace DotNetHelper_HttpClient.Services
 
         public Policy Policy { get; set; }  
  
-        public IJsonDeserializer JsonDeserializer { get; }
+   
         public HttpRestfulClient()
         {
             Client = new HttpClient(Handler,ReuseHandler);
-        
             IsFirstRequest = true;
         }
 
-        public HttpRestfulClient(IJsonDeserializer jsonDeserializer)
-        {
-            Client = new HttpClient(Handler, ReuseHandler);
-            IsFirstRequest = true;
-            JsonDeserializer = jsonDeserializer;
-        }
-
-        public HttpRestfulClient(Encoding encoding,IJsonDeserializer jsonDeserializer)
+        public HttpRestfulClient(Encoding encoding)
         {
             Encoding = encoding;
             Client = new HttpClient(Handler, ReuseHandler);
             IsFirstRequest = true;
-            JsonDeserializer = jsonDeserializer;
         }
 
 
@@ -179,7 +169,7 @@ namespace DotNetHelper_HttpClient.Services
             {
                 url = URLHelper.CreateUrl(baseurl, resource, headers);
             }
-           //  Client;
+
             var response = await DoWorkAsync(method, url,headers,content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
@@ -211,7 +201,6 @@ namespace DotNetHelper_HttpClient.Services
             {
                 url = URLHelper.CreateUrl(baseurl, resource, headers);
             }
-           //  Client;
             var response = await DoWorkAsync(method, url,headers,content);
             EnsureSuccessCodeAsync(response);
             return response;
@@ -240,7 +229,7 @@ namespace DotNetHelper_HttpClient.Services
             {
                 url = URLHelper.CreateUrl(baseurl, resource, headers);
             }
-           //  Client;
+
             var response = await DoWorkAsync(method, url,headers,content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
@@ -273,7 +262,6 @@ namespace DotNetHelper_HttpClient.Services
             {
                 url = URLHelper.CreateUrl(baseurl, resource, headers);
             }
-           //  Client;
             var response = await DoWorkAsync(method, url,headers,content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
@@ -293,7 +281,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public async Task<T> ExecuteGetTypeAsync<T>(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
+        public async Task<T> ExecuteGetTypeAsync<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
         {
 
             var url = "";
@@ -306,22 +294,14 @@ namespace DotNetHelper_HttpClient.Services
             {
                 url = URLHelper.CreateUrl(baseurl, resource, headers);
             }
-           //  Client;
+
             var response = await DoWorkAsync(method, url,headers,content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
             var isJsonResponse = response.Content.Headers.ContentType.MediaType == "application/json";
-            if (isJsonResponse)
-               // return JsonConvert.DeserializeObject<T>(result);
-                 return JsonDeserializer.Deserialize<T>(result);
-            var xmlSerializer = new XmlSerializer(typeof(T));
-            using (var memoryStream = new MemoryStream(Encoding.GetBytes(result)))
-            {
-                using (var xmlReader = XmlReader.Create(memoryStream))
-                {
-                    return (T)xmlSerializer.Deserialize(xmlReader);
-                }
-            }
+           // if (isJsonResponse)
+                // return JsonConvert.DeserializeObject<T>(result);
+            return deserializer.Invoke(result);
         }
 
 
@@ -641,7 +621,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>T.</returns>
-        public T ExecuteGetType<T>(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
+        public T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
         {
 
 
@@ -659,30 +639,13 @@ namespace DotNetHelper_HttpClient.Services
             var isJsonResponse = false;
             Task.Run(async () =>
             {
-              // using (Client)
-              // {
-                    var response = await DoWorkAsync(method, url,headers,content);
+                var response = await DoWorkAsync(method, url,headers,content);
                     EnsureSuccessCodeAsync(response);
                     isJsonResponse = response.Content.Headers.ContentType.MediaType == "application/json";
                     result = await response.Content.ReadAsStringAsync();
-
-              //  }
             }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
+            return deserializer.Invoke(result);
 
-
-            if (isJsonResponse)
-                // return JsonConvert.DeserializeObject<T>(result);
-                return JsonDeserializer.Deserialize<T>(result); // TODO :: THROW EXCEPTION IF NULL 
-
-            var xmlSerializer = new XmlSerializer(typeof(T));
-
-            using (var memoryStream = new MemoryStream(Encoding.GetBytes(result)))
-            {
-                using (var xmlReader = XmlReader.Create(memoryStream))
-                {
-                    return (T)xmlSerializer.Deserialize(xmlReader);
-                }
-            }
 
         }
 

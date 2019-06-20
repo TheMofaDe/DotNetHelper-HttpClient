@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using DotNetHelper_Contracts.Enum;
+using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Models;
 
 namespace DotNetHelper_HttpClient.Interface
@@ -68,7 +69,7 @@ namespace DotNetHelper_HttpClient.Interface
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        Task<T> ExecuteGetTypeAsync<T>(string baseurl, string resource, List<Parameter> headers, Method method,
+        Task<T> ExecuteGetTypeAsync<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method,
             HttpContent content = null); // where T : class; 
 
 
@@ -136,7 +137,7 @@ namespace DotNetHelper_HttpClient.Interface
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>T.</returns>
-        T ExecuteGetType<T>(string baseurl, string resource, List<Parameter> headers, Method method,
+        T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method,
             HttpContent content = null);
 
 

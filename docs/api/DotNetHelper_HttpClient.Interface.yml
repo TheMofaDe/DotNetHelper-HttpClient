@@ -4,7 +4,6 @@ items:
   commentId: N:DotNetHelper_HttpClient.Interface
   id: DotNetHelper_HttpClient.Interface
   children:
-  - DotNetHelper_HttpClient.Interface.IJsonDeserializer
   - DotNetHelper_HttpClient.Interface.IRestfulClient
   langs:
   - csharp
@@ -16,12 +15,6 @@ items:
   assemblies:
   - DotNetHelper-HttpClient
 references:
-- uid: DotNetHelper_HttpClient.Interface.IJsonDeserializer
-  commentId: T:DotNetHelper_HttpClient.Interface.IJsonDeserializer
-  parent: DotNetHelper_HttpClient.Interface
-  name: IJsonDeserializer
-  nameWithType: IJsonDeserializer
-  fullName: DotNetHelper_HttpClient.Interface.IJsonDeserializer
 - uid: DotNetHelper_HttpClient.Interface.IRestfulClient
   commentId: T:DotNetHelper_HttpClient.Interface.IRestfulClient
   parent: DotNetHelper_HttpClient.Interface

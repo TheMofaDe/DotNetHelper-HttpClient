@@ -5,7 +5,7 @@ items:
   id: MethodExtension
   parent: DotNetHelper_HttpClient.Extension
   children:
-  - DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  - DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
   langs:
   - csharp
   - vb
@@ -44,9 +44,9 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
-  commentId: M:DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
-  id: MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+- uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
+  commentId: M:DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
+  id: MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
   isExtensionMethod: true
   parent: DotNetHelper_HttpClient.Extension.MethodExtension
   langs:
@@ -54,7 +54,7 @@ items:
   - vb
   name: MapToHttpMethod(Method)
   nameWithType: MethodExtension.MapToHttpMethod(Method)
-  fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_Contracts.Enum.Method)
+  fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
   type: Method
   source:
     remote:
@@ -71,7 +71,7 @@ items:
     content: public static HttpMethod MapToHttpMethod(this Method method)
     parameters:
     - id: method
-      type: DotNetHelper_Contracts.Enum.Method
+      type: DotNetHelper_HttpClient.Enum.Method
     return:
       type: System.Net.Http.HttpMethod
     content.vb: >-
@@ -388,12 +388,12 @@ references:
   name: MapToHttpMethod
   nameWithType: MethodExtension.MapToHttpMethod
   fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
-- uid: DotNetHelper_Contracts.Enum.Method
-  commentId: T:DotNetHelper_Contracts.Enum.Method
-  parent: DotNetHelper_Contracts.Enum
+- uid: DotNetHelper_HttpClient.Enum.Method
+  commentId: T:DotNetHelper_HttpClient.Enum.Method
+  parent: DotNetHelper_HttpClient.Enum
   name: Method
   nameWithType: Method
-  fullName: DotNetHelper_Contracts.Enum.Method
+  fullName: DotNetHelper_HttpClient.Enum.Method
 - uid: System.Net.Http.HttpMethod
   commentId: T:System.Net.Http.HttpMethod
   parent: System.Net.Http
@@ -401,11 +401,11 @@ references:
   name: HttpMethod
   nameWithType: HttpMethod
   fullName: System.Net.Http.HttpMethod
-- uid: DotNetHelper_Contracts.Enum
-  commentId: N:DotNetHelper_Contracts.Enum
-  name: DotNetHelper_Contracts.Enum
-  nameWithType: DotNetHelper_Contracts.Enum
-  fullName: DotNetHelper_Contracts.Enum
+- uid: DotNetHelper_HttpClient.Enum
+  commentId: N:DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  nameWithType: DotNetHelper_HttpClient.Enum
+  fullName: DotNetHelper_HttpClient.Enum
 - uid: System.Net.Http
   commentId: N:System.Net.Http
   isExternal: true

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DotNetHelper_Contracts.Enum;
 using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Helpers;
 using DotNetHelper_HttpClient.Models;

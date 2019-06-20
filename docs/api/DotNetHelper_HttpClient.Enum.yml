@@ -4,6 +4,7 @@ items:
   commentId: N:DotNetHelper_HttpClient.Enum
   id: DotNetHelper_HttpClient.Enum
   children:
+  - DotNetHelper_HttpClient.Enum.Method
   - DotNetHelper_HttpClient.Enum.ParameterType
   langs:
   - csharp
@@ -15,6 +16,12 @@ items:
   assemblies:
   - DotNetHelper-HttpClient
 references:
+- uid: DotNetHelper_HttpClient.Enum.Method
+  commentId: T:DotNetHelper_HttpClient.Enum.Method
+  parent: DotNetHelper_HttpClient.Enum
+  name: Method
+  nameWithType: Method
+  fullName: DotNetHelper_HttpClient.Enum.Method
 - uid: DotNetHelper_HttpClient.Enum.ParameterType
   commentId: T:DotNetHelper_HttpClient.Enum.ParameterType
   parent: DotNetHelper_HttpClient.Enum

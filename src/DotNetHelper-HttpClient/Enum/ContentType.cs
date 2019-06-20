@@ -1,24 +1,24 @@
-﻿namespace DotNetHelper_Contracts.Enum
+﻿namespace DotNetHelper_HttpClient.Enum
 {
-    /// <summary>
-    /// Enum ContentType
-    /// </summary>
-    public enum ContentType
-    {
-        /// <summary>
-        /// The string
-        /// </summary>
-        String, Bytes
-    }
+    ///// <summary>
+    ///// Enum ContentType
+    ///// </summary>
+    //public enum ContentType
+    //{
+    //    /// <summary>
+    //    /// The string
+    //    /// </summary>
+    //    String, Bytes
+    //}
 
 
-    public enum ServerSideApiObjectType
-    {
-        /// <summary>
-        /// The string
-        /// </summary>
-        String, Model
-    }
+    //public enum ServerSideApiObjectType
+    //{
+    //    /// <summary>
+    //    /// The string
+    //    /// </summary>
+    //    String, Model
+    //}
 
 
     /// <summary>
