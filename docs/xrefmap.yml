@@ -67,12 +67,6 @@ references:
   commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.Cookie
   fullName: DotNetHelper_HttpClient.Enum.ParameterType.Cookie
   nameWithType: ParameterType.Cookie
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  name: GetOrPost
-  href: api/DotNetHelper_HttpClient.Enum.ParameterType.html#DotNetHelper_HttpClient_Enum_ParameterType_GetOrPost
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  nameWithType: ParameterType.GetOrPost
 - uid: DotNetHelper_HttpClient.Enum.ParameterType.HttpHeader
   name: HttpHeader
   href: api/DotNetHelper_HttpClient.Enum.ParameterType.html#DotNetHelper_HttpClient_Enum_ParameterType_HttpHeader
@@ -85,12 +79,6 @@ references:
   commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.QueryString
   fullName: DotNetHelper_HttpClient.Enum.ParameterType.QueryString
   nameWithType: ParameterType.QueryString
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  name: RequestBody
-  href: api/DotNetHelper_HttpClient.Enum.ParameterType.html#DotNetHelper_HttpClient_Enum_ParameterType_RequestBody
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  nameWithType: ParameterType.RequestBody
 - uid: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
   name: UrlSegment
   href: api/DotNetHelper_HttpClient.Enum.ParameterType.html#DotNetHelper_HttpClient_Enum_ParameterType_UrlSegment
@@ -122,6 +110,44 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
   nameWithType: MethodExtension.MapToHttpMethod
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  name: ObjectExtensions
+  href: api/DotNetHelper_HttpClient.Extension.ObjectExtensions.html
+  commentId: T:DotNetHelper_HttpClient.Extension.ObjectExtensions
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  nameWithType: ObjectExtensions
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  name: IsNullThrow(Object, String, Exception)
+  href: api/DotNetHelper_HttpClient.Extension.ObjectExtensions.html#DotNetHelper_HttpClient_Extension_ObjectExtensions_IsNullThrow_System_Object_System_String_System_Exception_
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object, System.String, System.Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(Object, String, Exception)
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow*
+  name: IsNullThrow
+  href: api/DotNetHelper_HttpClient.Extension.ObjectExtensions.html#DotNetHelper_HttpClient_Extension_ObjectExtensions_IsNullThrow_
+  commentId: Overload:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  isSpec: "True"
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  nameWithType: ObjectExtensions.IsNullThrow
+- uid: DotNetHelper_HttpClient.Extension.StringExtension
+  name: StringExtension
+  href: api/DotNetHelper_HttpClient.Extension.StringExtension.html
+  commentId: T:DotNetHelper_HttpClient.Extension.StringExtension
+  fullName: DotNetHelper_HttpClient.Extension.StringExtension
+  nameWithType: StringExtension
+- uid: DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence(System.String,System.String,System.String,System.StringComparison)
+  name: ReplaceLastOccurrence(String, String, String, StringComparison)
+  href: api/DotNetHelper_HttpClient.Extension.StringExtension.html#DotNetHelper_HttpClient_Extension_StringExtension_ReplaceLastOccurrence_System_String_System_String_System_String_System_StringComparison_
+  commentId: M:DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence(System.String,System.String,System.String,System.StringComparison)
+  fullName: DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence(System.String, System.String, System.String, System.StringComparison)
+  nameWithType: StringExtension.ReplaceLastOccurrence(String, String, String, StringComparison)
+- uid: DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence*
+  name: ReplaceLastOccurrence
+  href: api/DotNetHelper_HttpClient.Extension.StringExtension.html#DotNetHelper_HttpClient_Extension_StringExtension_ReplaceLastOccurrence_
+  commentId: Overload:DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence
+  isSpec: "True"
+  fullName: DotNetHelper_HttpClient.Extension.StringExtension.ReplaceLastOccurrence
+  nameWithType: StringExtension.ReplaceLastOccurrence
 - uid: DotNetHelper_HttpClient.Helpers
   name: DotNetHelper_HttpClient.Helpers
   href: api/DotNetHelper_HttpClient.Helpers.html
@@ -761,32 +787,19 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
   nameWithType: HttpRestfulClient.Handler
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy
-  name: Policy
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Policy
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy
-  nameWithType: HttpRestfulClient.Policy
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy*
-  name: Policy
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Policy_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  name: HttpRequestExecuteAsync
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_HttpRequestExecuteAsync
+  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  nameWithType: HttpRestfulClient.HttpRequestExecuteAsync
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync*
+  name: HttpRequestExecuteAsync
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_HttpRequestExecuteAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Policy
-  nameWithType: HttpRestfulClient.Policy
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken
-  name: PutAndPostOnlyCancelToken
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_PutAndPostOnlyCancelToken
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken
-  nameWithType: HttpRestfulClient.PutAndPostOnlyCancelToken
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken*
-  name: PutAndPostOnlyCancelToken
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_PutAndPostOnlyCancelToken_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.PutAndPostOnlyCancelToken
-  nameWithType: HttpRestfulClient.PutAndPostOnlyCancelToken
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  nameWithType: HttpRestfulClient.HttpRequestExecuteAsync
 - uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)
   name: ReInitialize(HttpClientHandler, Boolean)
   href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_System_Net_Http_HttpClientHandler_System_Boolean_
@@ -800,3 +813,6 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize
   nameWithType: HttpRestfulClient.ReInitialize
+- uid: TSD
+  name: THIS IS THE HOME PAGE TO TUTORIALS
+  href: tutorials/index.html

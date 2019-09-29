@@ -37,6 +37,7 @@ items:
     content.vb: Public Enum Method
   extensionMethods:
   - DotNetHelper_HttpClient.Enum.Method.DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod
+  - System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
   modifiers.csharp:
   - public
   - enum
@@ -310,6 +311,61 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  parent: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  definition: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  name: IsNullThrow(String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
   commentId: M:DotNetHelper_HttpClient.Extension.MethodExtension.MapToHttpMethod(DotNetHelper_HttpClient.Enum.Method)
   name: MapToHttpMethod(Method)
@@ -351,6 +407,82 @@ references:
   name: MethodExtension
   nameWithType: MethodExtension
   fullName: DotNetHelper_HttpClient.Extension.MethodExtension
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  isExternal: true
+  name: IsNullThrow(Object, String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(Object, String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object, System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  commentId: T:DotNetHelper_HttpClient.Extension.ObjectExtensions
+  parent: DotNetHelper_HttpClient.Extension
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions
 - uid: DotNetHelper_HttpClient.Extension
   commentId: N:DotNetHelper_HttpClient.Extension
   name: DotNetHelper_HttpClient.Extension

@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Enum.Method.html",
-          "hash": "xI6np5KSL3SVQlppzvZ6PA=="
+          "hash": "e2S8V5kaMDu0kyJMJjHF1g=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Enum.ParameterType.html",
-          "hash": "PmI09rHPFQIZAgdk+F/16g=="
+          "hash": "XVzqcGmnmbiMr2Z+BJqRXw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Enum.html",
-          "hash": "8IAwFYju9szVUVRq777Ulw=="
+          "hash": "VIcqz8wrDuVvRJSpSEKstA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,31 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Extension.MethodExtension.html",
-          "hash": "7kCh+C6XNweIcx3qQWB2PA=="
+          "hash": "+ZmraPLMNjkFztHV+D3YTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.ObjectExtensions.html",
+          "hash": "L/OdAWoz/8iUB+zVfTMekw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.StringExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.StringExtension.html",
+          "hash": "JAwDwffCdTqFVCJGLucxnw=="
         }
       },
       "is_incremental": false,
@@ -66,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Extension.html",
-          "hash": "g4UYUs3c0mkCEwW5tdr/HA=="
+          "hash": "3kSkT4MbrLEje2SPPkGdlQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Helpers.HttpContentHelper.html",
-          "hash": "c6AP7THi8ehgq9BtdtfAsw=="
+          "hash": "r6VCjbSlTb10JZw8x+r1gA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Helpers.URLHelper.html",
-          "hash": "w5e6XJsBcqiNA4sm5hUzZg=="
+          "hash": "FbzMT39a7IqKFaLYda+SIA=="
         }
       },
       "is_incremental": false,
@@ -102,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Helpers.html",
-          "hash": "BpP5n1Ko6oeoWY1riDd13A=="
+          "hash": "oQxY3W+RGgoQ39kFFtC89g=="
         }
       },
       "is_incremental": false,
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Interface.IRestfulClient.html",
-          "hash": "HI00zmSWSZFv8ILSqqK6eQ=="
+          "hash": "7wr6lr9724unMQdHw7/q8w=="
         }
       },
       "is_incremental": false,
@@ -126,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Interface.html",
-          "hash": "+FqqIyNIfc/3E+dNdZay4A=="
+          "hash": "zplhlLq/6+LJGuIPhL/lAA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Models.Parameter.html",
-          "hash": "fIodkrmoAQnzrnUTlH3x6w=="
+          "hash": "muz7Qqvc+fw/StLAaK3utQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Models.html",
-          "hash": "t1HbQLj7V+0rqFQSPUamtQ=="
+          "hash": "Scy7OpXDvWhY1HFfoCiyaQ=="
         }
       },
       "is_incremental": false,
@@ -162,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html",
-          "hash": "AgdbzxilxFBDI4+q8SPDsA=="
+          "hash": "3q56666h0QkdmSd3hPwPZA=="
         }
       },
       "is_incremental": false,
@@ -174,19 +198,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Services.html",
-          "hash": "KHTDWv9sm3yTZIrMUsMNPA=="
+          "hash": "gXRC20p+WPmkbDpkkBbFhw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "articles/sample.md",
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/sample.html",
-          "hash": "2Pwwr1q+IASPV0nGyILEew=="
+          "relative_path": "api/toc.html",
+          "hash": "hvVQ1EcTj9HK4ic9+AaQVA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "nKtyyqW0xBTFyNQ2PT7kwQ=="
+          "hash": "sAAi9LQfGVU1G8Ht3CE6gQ=="
         }
       },
       "is_incremental": false,
@@ -227,15 +251,92 @@
       },
       "is_incremental": false,
       "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "oSFonqYHd42fsvjECO1I4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/Attributes/attribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/Attributes/attribute.html",
+          "hash": "jPpoG2z7pGcdpjcO1IipLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/GenerateSql/datatable2sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/GenerateSql/datatable2sql.html",
+          "hash": "gMSedmtz9NwyZuEDCX98hQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/GenerateSql/object2sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/GenerateSql/object2sql.html",
+          "hash": "SIBAYSksC+qd8zxND/Rodg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/index.html",
+          "hash": "VElSKNRm00qw+8wjjlclqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "Ku3uC8uNMfP+72+HoBp5lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.41.0.0 to 2.44.0.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
       },
       "processors": {
         "ResourceDocumentProcessor": {
@@ -245,24 +346,24 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 2
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 14,
-          "skipped_file_count": 8
         }
       }
     },

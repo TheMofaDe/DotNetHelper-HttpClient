@@ -22,7 +22,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
     id: HttpContentHelper
     path: ../src/DotNetHelper-HttpClient/Helpers/HttpContentHelper.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - DotNetHelper-HttpClient
   namespace: DotNetHelper_HttpClient.Helpers
@@ -71,19 +71,21 @@ items:
   summary: "\nCreates the content of the HTTP.\n"
   example: []
   syntax:
-    content: public static HttpContent CreateStringContent(string value, string mediaType, Encoding encoding)
+    content: public static StringContent CreateStringContent(string value, string mediaType, Encoding encoding)
     parameters:
     - id: value
       type: System.String
+      description: ''
     - id: mediaType
       type: System.String
       description: Type of the media.
     - id: encoding
       type: System.Text.Encoding
+      description: ''
     return:
-      type: System.Net.Http.HttpContent
+      type: System.Net.Http.StringContent
       description: HttpContent.
-    content.vb: Public Shared Function CreateStringContent(value As String, mediaType As String, encoding As Encoding) As HttpContent
+    content.vb: Public Shared Function CreateStringContent(value As String, mediaType As String, encoding As Encoding) As StringContent
   overload: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent*
   modifiers.csharp:
   - public
@@ -116,14 +118,15 @@ items:
   summary: "\nCreates the content of the HTTP.\n"
   example: []
   syntax:
-    content: public static HttpContent CreateStringContent(string value)
+    content: public static StringContent CreateStringContent(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     return:
-      type: System.Net.Http.HttpContent
+      type: System.Net.Http.StringContent
       description: HttpContent.
-    content.vb: Public Shared Function CreateStringContent(value As String) As HttpContent
+    content.vb: Public Shared Function CreateStringContent(value As String) As StringContent
   overload: DotNetHelper_HttpClient.Helpers.HttpContentHelper.CreateStringContent*
   modifiers.csharp:
   - public
@@ -160,11 +163,13 @@ items:
     parameters:
     - id: value
       type: System.String
+      description: ''
     - id: mediaType
       type: System.String
       description: Type of the media.
     - id: encoding
       type: System.Text.Encoding
+      description: ''
     return:
       type: System.Net.Http.ByteArrayContent
       description: HttpContent.
@@ -493,13 +498,13 @@ references:
   name: Encoding
   nameWithType: Encoding
   fullName: System.Text.Encoding
-- uid: System.Net.Http.HttpContent
-  commentId: T:System.Net.Http.HttpContent
+- uid: System.Net.Http.StringContent
+  commentId: T:System.Net.Http.StringContent
   parent: System.Net.Http
   isExternal: true
-  name: HttpContent
-  nameWithType: HttpContent
-  fullName: System.Net.Http.HttpContent
+  name: StringContent
+  nameWithType: StringContent
+  fullName: System.Net.Http.StringContent
 - uid: System.Text
   commentId: N:System.Text
   isExternal: true

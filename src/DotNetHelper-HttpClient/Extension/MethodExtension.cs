@@ -34,7 +34,7 @@ namespace DotNetHelper_HttpClient.Extension
                 case Method.Trace:
                     return HttpMethod.Trace;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(method), method,null);
+                    throw new ArgumentOutOfRangeException(nameof(method), method, null);
             }
         }
 

@@ -14,8 +14,8 @@ namespace DotNetHelper_HttpClient.Helpers
         /// <param name="mediaType">Type of the media.</param>
         /// <param name="encoding"></param>
         /// <returns>HttpContent.</returns>
-        public static StringContent CreateStringContent(string value, string mediaType , Encoding encoding)
-        {            
+        public static StringContent CreateStringContent(string value, string mediaType, Encoding encoding)
+        {
             return new StringContent(value, encoding, mediaType);
         }
 
@@ -48,7 +48,7 @@ namespace DotNetHelper_HttpClient.Helpers
 
         private static StreamContent CreateStreamContent(Stream stream)
         {
-           return new StreamContent(stream);
+            return new StreamContent(stream);
         }
 
     }

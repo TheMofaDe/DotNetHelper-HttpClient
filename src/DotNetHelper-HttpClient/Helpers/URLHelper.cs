@@ -21,7 +21,7 @@ namespace DotNetHelper_HttpClient.Helpers
             if (string.IsNullOrEmpty(value))
                 return string.Empty;
 
-            var reservedCharacters = "!*'();:@&=+$,/?%#[]"; 
+            var reservedCharacters = "!*'();:@&=+$,/?%#[]";
             var sb = new StringBuilder();
 
             foreach (var @char in value)

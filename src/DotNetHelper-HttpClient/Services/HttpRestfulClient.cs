@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
- using System.IO;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -24,8 +24,7 @@ namespace DotNetHelper_HttpClient.Services
     public class HttpRestfulClient : IRestfulClient
     {
 
-        private bool IsFirstRequest { get; set; } 
-        /// <inheritdoc />
+        private bool IsFirstRequest { get; set; }
         /// <summary>
         /// Gets or sets the handler.
         /// </summary>
@@ -36,40 +35,38 @@ namespace DotNetHelper_HttpClient.Services
         /// </summary>
         /// <value><c>true</c> if [reuse handler]; otherwise, <c>false</c>.</value>
         private static bool ReuseHandler { get; } = false;
-        /// <inheritdoc />
-        /// <summary>
-        /// Gets or sets the put and post only cancel token.
-        /// </summary>
-        /// <value>The put and post only cancel token.</value>
-        public CancellationToken PutAndPostOnlyCancelToken { get; set; } = CancellationToken.None;
-        /// <inheritdoc />
+
+
         /// <summary>
         /// Gets or sets the default timeout.
         /// </summary>
         /// <value>The default timeout.</value>
         public TimeSpan DefaultTimeout { get; set; } = TimeSpan.FromSeconds(60);
-        /// <inheritdoc />
         /// <summary>
         /// Gets or sets the encoding.
         /// </summary>
         /// <value>The encoding.</value>
         public Encoding Encoding { get; set; } = Encoding.UTF8;
-        /// <inheritdoc />
         /// <summary>
         /// Gets or sets a value indicating whether [always ensure success code].
         /// </summary>
         /// <value><c>true</c> if [always ensure success code]; otherwise, <c>false</c>.</value>
         public bool AlwaysEnsureSuccessCode { get; set; } = true;
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public HttpClient Client { get; private set; }
 
-        public Policy Policy { get; set; }  
- 
-   
+        /// <summary>
+        /// A func that will return a httpresponsemessage this method is used to integrate with polly
+        /// </summary>
+        public Func<Task<HttpResponseMessage>> HttpRequestExecuteAsync { get; set; }
+
+
         public HttpRestfulClient()
         {
-            Client = new HttpClient(Handler,ReuseHandler);
+            Client = new HttpClient(Handler, ReuseHandler);
             IsFirstRequest = true;
         }
 
@@ -83,7 +80,7 @@ namespace DotNetHelper_HttpClient.Services
 
         public void ReInitialize(HttpClientHandler handle, bool reuseHandler)
         {
-            Client = new HttpClient(handle , reuseHandler);
+            Client = new HttpClient(handle, reuseHandler);
             IsFirstRequest = true;
         }
 
@@ -91,7 +88,7 @@ namespace DotNetHelper_HttpClient.Services
 
 
 
-       
+
 
 
 
@@ -109,7 +106,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="headers"></param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        private async Task<HttpResponseMessage> DoWorkAsync(Method method, string url, List<Parameter> headers, HttpContent content = null)
+        private async Task<HttpResponseMessage> SendAsync(Method method, string url, List<Parameter> headers, HttpContent content = null)
         {
 
 
@@ -122,42 +119,51 @@ namespace DotNetHelper_HttpClient.Services
             var request = new HttpRequestMessage(HttpMethod.Options, url)
             {
                 Content = content
-               ,Method = method.MapToHttpMethod()
+               ,
+                Method = method.MapToHttpMethod()
 
             };
             if (!headers.IsNullOrEmpty())
             {
-                headers.Where(p => p.Type == ParameterType.HttpHeader).ToList().ForEach(delegate(Parameter parameter)
+                headers.Where(p => p.Type == ParameterType.HttpHeader).ToList().ForEach(delegate (Parameter parameter)
                 {
-                    request.Headers.Add(parameter.Name,parameter.Value.ToString());
+                    request.Headers.Add(parameter.Name, parameter.Value.ToString());
                 });
 
                 var cookies = headers.Where(p => p.Type == ParameterType.Cookie).Select(c => $"{c.Name}={c.Value}; ");
                 if (cookies.Any())
                 {
                     var value = string.Join(string.Empty, cookies);
-                    value = value.ReplaceLastOccurrence("; ",string.Empty,StringComparison.OrdinalIgnoreCase);
+                    value = value.ReplaceLastOccurrence("; ", string.Empty, StringComparison.OrdinalIgnoreCase);
                     request.Headers.Add("Cookie", value);
                 }
-           
+
             }
 
-            if (Policy != null)
+            if (HttpRequestExecuteAsync != null)
             {
-                var pollyRequest = await Policy.ExecuteAsync(async () => await Client.SendAsync(request, PutAndPostOnlyCancelToken));
-                return pollyRequest;
+                return await HttpRequestExecuteAsync.Invoke();
             }
             else
             {
-                return await Client.SendAsync(request, PutAndPostOnlyCancelToken);
+                return await Client.SendAsync(request);
             }
-            //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
         }
 
 
+        /// <summary>
+        /// do work as an asynchronous operation.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        /// <param name="url">The URL.</param>
+        /// <param name="headers"></param>
+        /// <param name="content">The content.</param>
+        /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
+        private HttpResponseMessage Send(Method method, string url, List<Parameter> headers, HttpContent content = null)
+        {
+            return AsyncHelper.RunSync(() => SendAsync(method, url, headers, content));
+        }
 
-        /// <inheritdoc />
         /// <summary>
         /// execute get response as an asynchronous operation.
         /// </summary>
@@ -169,25 +175,32 @@ namespace DotNetHelper_HttpClient.Services
         /// <returns>Task&lt;System.String&gt;.</returns>
         public async Task<string> ExecuteGetResponseAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-
-            var response = await DoWorkAsync(method, url,headers,content);
+            var response = await SendAsync(method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
             return result;
         }
 
 
-        /// <inheritdoc />
+        /// <summary>
+        /// execute get response as an asynchronous operation.
+        /// </summary>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>Task&lt;System.String&gt;.</returns>
+        public string ExecuteGetResponse(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        {
+            return AsyncHelper.RunSync(() => ExecuteGetResponseAsync(baseurl, resource, headers, method, content));
+        }
+
+
+
         /// <summary>
         /// Execute get HTTP response as an asynchronous operation.
         /// </summary>
@@ -199,25 +212,33 @@ namespace DotNetHelper_HttpClient.Services
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
         public async Task<HttpResponseMessage> ExecuteGetHttpResponseAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var reason = $"";
-
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-            var response = await DoWorkAsync(method, url,headers,content);
+            var response = await SendAsync(method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             return response;
 
         }
 
-        /// <inheritdoc />
+
+        /// <summary>
+        /// Execute get HTTP response as an asynchronous operation.
+        /// </summary>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
+        public HttpResponseMessage ExecuteGetHttpResponse(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        {
+            return AsyncHelper.RunSync(() => ExecuteGetHttpResponseAsync(baseurl, resource, headers, method, content));
+        }
+
+
+
+
         /// <summary>
         /// Execute get stream as an asynchronous operation.
         /// </summary>
@@ -230,24 +251,33 @@ namespace DotNetHelper_HttpClient.Services
         public async Task<Stream> ExecuteGetStreamAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await DoWorkAsync(method, url,headers,content);
+            var response = await SendAsync(method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
             var stream = await response.Content.ReadAsStreamAsync();
-            stream.Position = 0;
+            stream.Seek(0, SeekOrigin.Begin);
             return stream;
 
         }
+
+
+        /// <summary>
+        /// Execute get stream as an asynchronous operation.
+        /// </summary>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>Task&lt;Stream&gt;.</returns>
+        public Stream ExecuteGetStream(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        {
+            return AsyncHelper.RunSync(() => ExecuteGetStreamAsync(baseurl, resource, headers, method, content));
+        }
+
 
 
         /// <inheritdoc />
@@ -263,16 +293,10 @@ namespace DotNetHelper_HttpClient.Services
         public async Task<byte[]> ExecuteGetBytesAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-            var response = await DoWorkAsync(method, url,headers,content);
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
+
+            var response = await SendAsync(method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
             var bytes = await response.Content.ReadAsByteArrayAsync();
@@ -291,26 +315,18 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public async Task<T> ExecuteGetTypeAsync<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
+        public async Task<T> ExecuteGetTypeAsync<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                //  return null;
-                return default;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await DoWorkAsync(method, url,headers,content);
+            var response = await SendAsync(method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
             var isJsonResponse = response.Content.Headers.ContentType.MediaType == "application/json";
-           // if (isJsonResponse)
-                // return JsonConvert.DeserializeObject<T>(result);
+            // if (isJsonResponse)
+            // return JsonConvert.DeserializeObject<T>(result);
             return deserializer.Invoke(result);
         }
 
@@ -472,114 +488,9 @@ namespace DotNetHelper_HttpClient.Services
 
 
 
-        /// <inheritdoc />
-        /// <summary>
-        /// Executes the get response.
-        /// </summary>
-        /// <param name="baseurl">The baseurl.</param>
-        /// <param name="resource">The resource.</param>
-        /// <param name="headers">The headers.</param>
-        /// <param name="method">The method.</param>
-        /// <param name="content">The content.</param>
-        /// <returns>System.String.</returns>
-        public string ExecuteGetResponse(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-        {
-
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-            string result = null;
-            Task.Run(async () =>
-            {
-                //using (Client)
-                //{
-                    var response = await DoWorkAsync(method, url,headers,content);
-                    EnsureSuccessCodeAsync(response);
-                    result = await response.Content.ReadAsStringAsync();
-
-               // }
-            }, PutAndPostOnlyCancelToken).Wait(CancellationToken.None);
-            return result;
 
 
-        }
 
-
-        /// <inheritdoc />
-        /// <summary>
-        /// Executes the get HTTP response.
-        /// </summary>
-        /// <param name="baseurl">The baseurl.</param>
-        /// <param name="resource">The resource.</param>
-        /// <param name="headers">The headers.</param>
-        /// <param name="method">The method.</param>
-        /// <param name="content">The content.</param>
-        /// <returns>HttpResponseMessage.</returns>
-        public HttpResponseMessage ExecuteGetHttpResponse(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-        {
-
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-            HttpResponseMessage response = null;
-            Task.Run(async () =>
-            {
-                //using (Client)
-                //{
-                    response = await DoWorkAsync(method, url,headers,content);
-                    EnsureSuccessCodeAsync(response);
-                //}
-            }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
-            return response;
-
-        }
-
-        /// <inheritdoc />
-        /// <summary>
-        /// Executes the get stream.
-        /// </summary>
-        /// <param name="baseurl">The baseurl.</param>
-        /// <param name="resource">The resource.</param>
-        /// <param name="headers">The headers.</param>
-        /// <param name="method">The method.</param>
-        /// <param name="content">The content.</param>
-        /// <returns>Stream.</returns>
-        public Stream ExecuteGetStream(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-        {
-
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
-            Stream stream = null;
-            Task.Run(async () =>
-            {
-                    var response = await DoWorkAsync(method, url,headers,content);
-                    // Check that response was successful or throw exception
-                    EnsureSuccessCodeAsync(response);
-                    await response.Content.LoadIntoBufferAsync();
-                    stream = await response.Content.ReadAsStreamAsync();
-                    stream.Position = 0;
-            }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
-            return stream;
-        }
 
 
         /// <inheritdoc />
@@ -595,27 +506,21 @@ namespace DotNetHelper_HttpClient.Services
         public byte[] ExecuteGetBytes(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
+
             byte[] bytes = null;
             Task.Run(async () =>
             {
-               // using (Client)
-               // {
-                    var response = await DoWorkAsync(method, url,headers,content);
-                    // Check that response was successful or throw exception
-                    EnsureSuccessCodeAsync(response);
-                    await response.Content.LoadIntoBufferAsync();
-                    bytes = await response.Content.ReadAsByteArrayAsync();
-              //  }
-            }, PutAndPostOnlyCancelToken).Wait(CancellationToken.None);
+                // using (Client)
+                // {
+                var response = await SendAsync(method, url, headers, content);
+                // Check that response was successful or throw exception
+                EnsureSuccessCodeAsync(response);
+                await response.Content.LoadIntoBufferAsync();
+                bytes = await response.Content.ReadAsByteArrayAsync();
+                //  }
+            }).Wait(CancellationToken.None);
             return bytes;
 
         }
@@ -632,29 +537,21 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>T.</returns>
-        public T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null) 
+        public T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                // return null;
-                return default;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
             string result = null;
             var isJsonResponse = false;
             Task.Run(async () =>
             {
-                var response = await DoWorkAsync(method, url,headers,content);
-                    EnsureSuccessCodeAsync(response);
-                    isJsonResponse = response.Content.Headers.ContentType.MediaType == "application/json";
-                    result = await response.Content.ReadAsStringAsync();
-            }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
+                var response = await SendAsync(method, url, headers, content);
+                EnsureSuccessCodeAsync(response);
+                isJsonResponse = response.Content.Headers.ContentType.MediaType == "application/json";
+                result = await response.Content.ReadAsStringAsync();
+            }).Wait();
             return deserializer.Invoke(result);
 
 
@@ -673,26 +570,21 @@ namespace DotNetHelper_HttpClient.Services
         /// <returns>XmlDocument.</returns>
         public XmlDocument ExecuteGetXmlDocument(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            var url = "";
-            if (string.IsNullOrEmpty(baseurl))
-            {
-                return null;
-            }
-            else
-            {
-                url = URLHelper.CreateUrl(baseurl, resource, headers);
-            }
+
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
+
             string result = null;
             Task.Run(async () =>
             {
-               // using (Client)
-               // {
-                    var response = await DoWorkAsync(method, url,headers,content);
-                    EnsureSuccessCodeAsync(response);
-                    result = await response.Content.ReadAsStringAsync();
+                // using (Client)
+                // {
+                var response = await SendAsync(method, url, headers, content);
+                EnsureSuccessCodeAsync(response);
+                result = await response.Content.ReadAsStringAsync();
 
-              //  }
-            }, PutAndPostOnlyCancelToken).Wait(PutAndPostOnlyCancelToken);
+                //  }
+            }).Wait();
             var doc = new XmlDocument();
             doc.LoadXml(result);
             return doc;
@@ -717,8 +609,8 @@ namespace DotNetHelper_HttpClient.Services
 
 
 
-    
-  
+
+
 
 }
 

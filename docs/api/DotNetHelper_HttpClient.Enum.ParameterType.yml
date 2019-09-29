@@ -6,10 +6,8 @@ items:
   parent: DotNetHelper_HttpClient.Enum
   children:
   - DotNetHelper_HttpClient.Enum.ParameterType.Cookie
-  - DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
   - DotNetHelper_HttpClient.Enum.ParameterType.HttpHeader
   - DotNetHelper_HttpClient.Enum.ParameterType.QueryString
-  - DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
   - DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
   langs:
   - csharp
@@ -34,6 +32,8 @@ items:
   syntax:
     content: public enum ParameterType
     content.vb: Public Enum ParameterType
+  extensionMethods:
+  - System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
   modifiers.csharp:
   - public
   - enum
@@ -74,40 +74,6 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  id: GetOrPost
-  parent: DotNetHelper_HttpClient.Enum.ParameterType
-  langs:
-  - csharp
-  - vb
-  name: GetOrPost
-  nameWithType: ParameterType.GetOrPost
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.GetOrPost
-  type: Field
-  source:
-    remote:
-      path: src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
-    id: GetOrPost
-    path: ../src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-    startLine: 21
-  assemblies:
-  - DotNetHelper-HttpClient
-  namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe get or post\n"
-  example: []
-  syntax:
-    content: GetOrPost = 1
-    return:
-      type: DotNetHelper_HttpClient.Enum.ParameterType
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
 - uid: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
   commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
   id: UrlSegment
@@ -130,10 +96,10 @@ items:
   assemblies:
   - DotNetHelper-HttpClient
   namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe URL segment\n"
+  summary: "\nThe get or post\n"
   example: []
   syntax:
-    content: UrlSegment = 2
+    content: UrlSegment = 1
     return:
       type: DotNetHelper_HttpClient.Enum.ParameterType
   modifiers.csharp:
@@ -167,41 +133,7 @@ items:
   summary: "\nThe HTTP header\n"
   example: []
   syntax:
-    content: HttpHeader = 3
-    return:
-      type: DotNetHelper_HttpClient.Enum.ParameterType
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  id: RequestBody
-  parent: DotNetHelper_HttpClient.Enum.ParameterType
-  langs:
-  - csharp
-  - vb
-  name: RequestBody
-  nameWithType: ParameterType.RequestBody
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.RequestBody
-  type: Field
-  source:
-    remote:
-      path: src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
-    id: RequestBody
-    path: ../src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-    startLine: 33
-  assemblies:
-  - DotNetHelper-HttpClient
-  namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe request body\n"
-  example: []
-  syntax:
-    content: RequestBody = 4
+    content: HttpHeader = 2
     return:
       type: DotNetHelper_HttpClient.Enum.ParameterType
   modifiers.csharp:
@@ -228,14 +160,14 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
     id: QueryString
     path: ../src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - DotNetHelper-HttpClient
   namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe query string\n"
+  summary: "\nThe request body\n"
   example: []
   syntax:
-    content: QueryString = 5
+    content: QueryString = 3
     return:
       type: DotNetHelper_HttpClient.Enum.ParameterType
   modifiers.csharp:
@@ -250,6 +182,142 @@ references:
   name: DotNetHelper_HttpClient.Enum
   nameWithType: DotNetHelper_HttpClient.Enum
   fullName: DotNetHelper_HttpClient.Enum
+- uid: System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  parent: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  definition: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  name: IsNullThrow(String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  isExternal: true
+  name: IsNullThrow(Object, String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(Object, String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object, System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  commentId: T:DotNetHelper_HttpClient.Extension.ObjectExtensions
+  parent: DotNetHelper_HttpClient.Extension
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions
+- uid: DotNetHelper_HttpClient.Extension
+  commentId: N:DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  nameWithType: DotNetHelper_HttpClient.Extension
+  fullName: DotNetHelper_HttpClient.Extension
 - uid: DotNetHelper_HttpClient.Enum.ParameterType
   commentId: T:DotNetHelper_HttpClient.Enum.ParameterType
   parent: DotNetHelper_HttpClient.Enum

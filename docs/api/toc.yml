@@ -11,6 +11,10 @@
   items:
   - uid: DotNetHelper_HttpClient.Extension.MethodExtension
     name: MethodExtension
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+    name: ObjectExtensions
+  - uid: DotNetHelper_HttpClient.Extension.StringExtension
+    name: StringExtension
 - uid: DotNetHelper_HttpClient.Helpers
   name: DotNetHelper_HttpClient.Helpers
   items:

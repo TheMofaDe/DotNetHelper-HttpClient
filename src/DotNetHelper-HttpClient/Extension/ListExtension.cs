@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DotNetHelper_HttpClient.Extension
 {
-   internal static class ListExtension
+    internal static class ListExtension
     {
         /// <summary>
         /// Method Name Pretty Much Says It All

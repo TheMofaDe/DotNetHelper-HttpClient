@@ -32,6 +32,8 @@ namespace DotNetHelper_HttpClient.Enum
         /// The request body
         /// </summary>
         /// RequestBody,
+
+
         /// <summary>
         /// The query string
         /// </summary>

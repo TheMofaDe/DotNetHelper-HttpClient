@@ -24,7 +24,7 @@ namespace DotNetHelper_HttpClient.Models
         /// Type of the parameter
         /// </summary>
         /// <value>The type.</value>
-        public ParameterType Type { get; set; } 
+        public ParameterType Type { get; set; }
 
         /// <summary>
         /// MIME content type of the parameter
