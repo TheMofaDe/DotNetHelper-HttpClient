@@ -1,5 +1,3 @@
-using DotNetHelper_HttpClient.Helpers;
-using DotNetHelper_HttpClient.Services;
 using NUnit.Framework;
 
 namespace Tests

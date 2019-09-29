@@ -73,7 +73,7 @@ namespace DotNetHelper_HttpClient.Helpers
             if (headers != null)
             {
                 if (string.IsNullOrEmpty(resource)) resource = "";
-                foreach (var param in headers.Where(p => p.Type == ParameterType.QueryString || p.Type == ParameterType.UrlSegment))
+                foreach (var param in headers.Where(p => p.Type == ParameterType.QueryString))
                 {
                     var value = param.EscapeValue ? UrlEscape(param.Value.ToString()) : param.Value;
                     if (string.IsNullOrEmpty(param.Name) || string.IsNullOrEmpty(param.Value.ToString()))
@@ -97,15 +97,11 @@ namespace DotNetHelper_HttpClient.Helpers
                     {
                         resource += $"{param.Name}={value}&";
                     }
-
                 }
                 resource = resource.EndsWith("&") ? resource.Remove(resource.Length - 1) : resource;
             }
 
-            if (resource != null && resource.Contains(" "))
-            {
-
-            }
+           
             return baseurl + resource;
         }
 

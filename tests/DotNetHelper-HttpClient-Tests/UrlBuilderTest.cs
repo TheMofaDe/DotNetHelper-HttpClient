@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Helpers;
 using DotNetHelper_HttpClient.Models;
-using DotNetHelper_HttpClient.Services;
 using NUnit.Framework;
 
 namespace DotNetHelper_HttpClient_Tests
@@ -97,6 +93,16 @@ namespace DotNetHelper_HttpClient_Tests
             var output = new Uri(URLHelper.CreateUrl("http://example.com", "resource?test=test", null));
 
             Assert.AreEqual(expected, output);
+        }
+
+        [Test] public void Test_CreateUrl_With_UrlSegment()
+        {
+            var url = "https://jsonplaceholder.typicode.com/todos";
+
+         
+           // var output = new Uri(URLHelper.CreateUrl("https://jsonplaceholder.typicode.com", "todos", parameters));
+
+        //    Assert.AreEqual(new Uri(url), output);
         }
 
     }

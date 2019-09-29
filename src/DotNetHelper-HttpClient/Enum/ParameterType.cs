@@ -23,7 +23,7 @@ namespace DotNetHelper_HttpClient.Enum
         /// <summary>
         /// The URL segment
         /// </summary>
-        UrlSegment,
+        /// UrlSegment,
         /// <summary>
         /// The HTTP header
         /// </summary>
