@@ -19,7 +19,7 @@ namespace DotNetHelper_HttpClient.Enum
         /// <summary>
         /// The get or post
         /// </summary>
-        GetOrPost,
+        /// GetOrPost,
         /// <summary>
         /// The URL segment
         /// </summary>
@@ -31,7 +31,7 @@ namespace DotNetHelper_HttpClient.Enum
         /// <summary>
         /// The request body
         /// </summary>
-        RequestBody,
+        /// RequestBody,
         /// <summary>
         /// The query string
         /// </summary>

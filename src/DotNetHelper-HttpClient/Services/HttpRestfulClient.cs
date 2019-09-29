@@ -131,7 +131,17 @@ namespace DotNetHelper_HttpClient.Services
                 {
                     request.Headers.Add(parameter.Name,parameter.Value.ToString());
                 });
+
+                var cookies = headers.Where(p => p.Type == ParameterType.Cookie).Select(c => $"{c.Name}={c.Value}; ");
+                if (cookies.Any())
+                {
+                    var value = string.Join(string.Empty, cookies);
+                    value = value.ReplaceLastOccurrence("; ",string.Empty,StringComparison.OrdinalIgnoreCase);
+                    request.Headers.Add("Cookie", value);
+                }
+           
             }
+
             if (Policy != null)
             {
                 var pollyRequest = await Policy.ExecuteAsync(async () => await Client.SendAsync(request, PutAndPostOnlyCancelToken));
@@ -615,6 +625,7 @@ namespace DotNetHelper_HttpClient.Services
         /// Executes the type of the get.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="deserializer"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>

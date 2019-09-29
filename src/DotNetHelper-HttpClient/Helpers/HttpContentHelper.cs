@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -6,15 +7,14 @@ namespace DotNetHelper_HttpClient.Helpers
 {
     public static class HttpContentHelper
     {
-
         /// <summary>
         /// Creates the content of the HTTP.
         /// </summary>
-        /// <param name="json">json to attach to request body </param>
-        /// <param name="type">The type.</param>
+        /// <param name="value"></param>
         /// <param name="mediaType">Type of the media.</param>
+        /// <param name="encoding"></param>
         /// <returns>HttpContent.</returns>
-        public static HttpContent CreateStringContent(string value, string mediaType , Encoding encoding)
+        public static StringContent CreateStringContent(string value, string mediaType , Encoding encoding)
         {            
             return new StringContent(value, encoding, mediaType);
         }
@@ -23,9 +23,9 @@ namespace DotNetHelper_HttpClient.Helpers
         /// <summary>
         /// Creates the content of the HTTP.
         /// </summary>
-        /// <param name="json">json to attach to request body </param>
+        /// <param name="value"></param>
         /// <returns>HttpContent.</returns>
-        public static HttpContent CreateStringContent(string value)
+        public static StringContent CreateStringContent(string value)
         {
             return new StringContent(value);
         }
@@ -33,9 +33,9 @@ namespace DotNetHelper_HttpClient.Helpers
         /// <summary>
         /// Creates the content of the HTTP.
         /// </summary>
-        /// <param name="json">json to attach to request body </param>
-        /// <param name="type">The type.</param>
+        /// <param name="value"></param>
         /// <param name="mediaType">Type of the media.</param>
+        /// <param name="encoding"></param>
         /// <returns>HttpContent.</returns>
         public static ByteArrayContent CreateByteArrayContent(string value, string mediaType, Encoding encoding)
         {
@@ -43,6 +43,12 @@ namespace DotNetHelper_HttpClient.Helpers
             var byteContent = new ByteArrayContent(buffer);
             byteContent.Headers.ContentType = new MediaTypeHeaderValue(mediaType);
             return byteContent;
+        }
+
+
+        private static StreamContent CreateStreamContent(Stream stream)
+        {
+           return new StreamContent(stream);
         }
 
     }

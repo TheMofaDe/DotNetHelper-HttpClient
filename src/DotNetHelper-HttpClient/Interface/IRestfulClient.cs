@@ -131,6 +131,7 @@ namespace DotNetHelper_HttpClient.Interface
         /// Executes the type of the get.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="deserializer"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
