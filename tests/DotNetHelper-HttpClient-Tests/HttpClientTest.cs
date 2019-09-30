@@ -20,13 +20,25 @@ namespace DotNetHelper_HttpClient_Tests
             ,UserId = 1,Title = "delectus aut autem"
         };
 
+
+        public bool IsAMatch(JsonObject one, JsonObject two)
+        {
+            return
+            (
+                one.Completed == two.Completed
+                && one.Id == two.Id
+                && one.Title == two.Title
+                && one.UserId == two.UserId
+            );
+        }
+
         [Test]
-        public void A()
+        public void Test_GetReponse_AsString()
         {
             var client = new HttpRestfulClient(Encoding.UTF8);
             var json = client.ExecuteGetResponse("https://jsonplaceholder.typicode.com/todos/1", null, null, Method.Get);
             var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
-            Assert.AreEqual(ExpectedValue,jsonObject);
+            Assert.IsTrue(IsAMatch(ExpectedValue, jsonObject));
         }
 
 
@@ -37,8 +49,9 @@ namespace DotNetHelper_HttpClient_Tests
             {
                 Client = {BaseAddress = new Uri("https://jsonplaceholder.typicode.com/")}
             };
-            var jsonObject = client.ExecuteGetResponse("todos/1", null, null, Method.Get);
-            Assert.AreEqual(ExpectedValue, jsonObject);
+            var json = client.ExecuteGetResponse("todos/1", null, null, Method.Get);
+            var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
+            Assert.IsTrue(IsAMatch(ExpectedValue, jsonObject));
         }
     }
 }
