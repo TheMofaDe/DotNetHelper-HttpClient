@@ -24,7 +24,7 @@ namespace DotNetHelper_HttpClient.Services
     public class HttpRestfulClient : IRestfulClient
     {
 
-       
+
         /// <summary>
         /// Gets or sets the handler.
         /// </summary>
@@ -66,19 +66,19 @@ namespace DotNetHelper_HttpClient.Services
 
         public HttpRestfulClient()
         {
-            Client = new HttpClient(Handler, ReuseHandler) {Timeout = DefaultTimeout};
+            Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
         }
 
         public HttpRestfulClient(Encoding encoding)
         {
             Encoding = encoding;
-            Client = new HttpClient(Handler, ReuseHandler) {Timeout = DefaultTimeout};
+            Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
         }
 
 
         public void ReInitialize(HttpClientHandler handle, bool reuseHandler)
         {
-            Client = new HttpClient(handle, reuseHandler) {Timeout = DefaultTimeout};
+            Client = new HttpClient(handle, reuseHandler) { Timeout = DefaultTimeout };
         }
 
 
@@ -101,7 +101,8 @@ namespace DotNetHelper_HttpClient.Services
             var request = new HttpRequestMessage(HttpMethod.Options, url)
             {
                 Content = content
-               ,Method = method.MapToHttpMethod()
+               ,
+                Method = method.MapToHttpMethod()
 
             };
             if (!headers.IsNullOrEmpty())
@@ -323,80 +324,80 @@ namespace DotNetHelper_HttpClient.Services
         }
 
 
-            /// <summary>
-            /// execute get type as an asynchronous operation.
-            /// </summary>
-            /// <typeparam name="T"></typeparam>
-            /// <param name="deserializer"></param>
-            /// <param name="baseurl">The baseurl.</param>
-            /// <param name="resource">The resource.</param>
-            /// <param name="headers">The headers.</param>
-            /// <param name="method">The method.</param>
-            /// <param name="content">The content.</param>
-            /// <returns>Task&lt;T&gt;.</returns>
-            public T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-            {
-             return AsyncHelper.RunSync(() => ExecuteGetTypeAsync(deserializer,baseurl,resource,headers,method,content));
-            }
-
-
-
-
-            /// <summary>
-            /// Executes the get XML document.
-            /// </summary>
-            /// <param name="baseurl">The baseurl.</param>
-            /// <param name="resource">The resource.</param>
-            /// <param name="headers">The headers.</param>
-            /// <param name="method">The method.</param>
-            /// <param name="content">The content.</param>
-            /// <returns>XmlDocument.</returns>
-            public async Task<XmlDocument> ExecuteGetXmlDocumentAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-            {
-
-                baseurl.IsNullThrow(nameof(baseurl));
-                var url = URLHelper.CreateUrl(baseurl, resource, headers);
-
-                var response = await SendAsync(method, url, headers, content);
-                EnsureSuccessCodeAsync(response);
-                var  result = await response.Content.ReadAsStringAsync();
-
-                var doc = new XmlDocument();
-                doc.LoadXml(result);
-                return doc;
-
-            }
-
-
-            /// <summary>
-            /// Executes the get XML document.
-            /// </summary>
-            /// <param name="baseurl">The baseurl.</param>
-            /// <param name="resource">The resource.</param>
-            /// <param name="headers">The headers.</param>
-            /// <param name="method">The method.</param>
-            /// <param name="content">The content.</param>
-            /// <returns>XmlDocument.</returns>
-            public XmlDocument ExecuteGetXmlDocument(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
-            {
-                return AsyncHelper.RunSync(() => ExecuteGetXmlDocumentAsync(baseurl, resource, headers, method, content));
-            }
-
-
-            /// <summary>
-            /// Downloads the file.
-            /// </summary>
-            /// <param name="url">The URL.</param>
-            /// <param name="fileStream"></param>
-            /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-            public async Task<bool> DownloadFileAsync(string url, FileStream fileStream)
+        /// <summary>
+        /// execute get type as an asynchronous operation.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="deserializer"></param>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>Task&lt;T&gt;.</returns>
+        public T ExecuteGetType<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-                using (var content = ExecuteGetHttpResponse(url, null, null, Method.Get))
-                {
-                    if (content == null) return true;
-                    await content.Content.CopyToAsync(fileStream);
-                    return true;
-                }
+            return AsyncHelper.RunSync(() => ExecuteGetTypeAsync(deserializer, baseurl, resource, headers, method, content));
+        }
+
+
+
+
+        /// <summary>
+        /// Executes the get XML document.
+        /// </summary>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>XmlDocument.</returns>
+        public async Task<XmlDocument> ExecuteGetXmlDocumentAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        {
+
+            baseurl.IsNullThrow(nameof(baseurl));
+            var url = URLHelper.CreateUrl(baseurl, resource, headers);
+
+            var response = await SendAsync(method, url, headers, content);
+            EnsureSuccessCodeAsync(response);
+            var result = await response.Content.ReadAsStringAsync();
+
+            var doc = new XmlDocument();
+            doc.LoadXml(result);
+            return doc;
+
+        }
+
+
+        /// <summary>
+        /// Executes the get XML document.
+        /// </summary>
+        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="resource">The resource.</param>
+        /// <param name="headers">The headers.</param>
+        /// <param name="method">The method.</param>
+        /// <param name="content">The content.</param>
+        /// <returns>XmlDocument.</returns>
+        public XmlDocument ExecuteGetXmlDocument(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        {
+            return AsyncHelper.RunSync(() => ExecuteGetXmlDocumentAsync(baseurl, resource, headers, method, content));
+        }
+
+
+        /// <summary>
+        /// Downloads the file.
+        /// </summary>
+        /// <param name="url">The URL.</param>
+        /// <param name="fileStream"></param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public async Task<bool> DownloadFileAsync(string url, FileStream fileStream)
+        {
+            using (var content = ExecuteGetHttpResponse(url, null, null, Method.Get))
+            {
+                if (content == null) return true;
+                await content.Content.CopyToAsync(fileStream);
+                return true;
+            }
         }
 
 
@@ -421,7 +422,7 @@ namespace DotNetHelper_HttpClient.Services
                     progress.Report(100);
                     return true;
                 }
-                if(buffer == null) buffer = new byte[4 * 1024];
+                if (buffer == null) buffer = new byte[4 * 1024];
                 int read;
                 var max = response.Length;
                 var currentprogress = 0;
@@ -454,12 +455,12 @@ namespace DotNetHelper_HttpClient.Services
         }
 
 
-            /// <summary>
-            /// Ensures the success code asynchronous.
-            /// </summary>
-            /// <param name="response">The response.</param>
-            /// <exception cref="Exception"></exception>
-            private void EnsureSuccessCodeAsync(HttpResponseMessage response)
+        /// <summary>
+        /// Ensures the success code asynchronous.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <exception cref="Exception"></exception>
+        private void EnsureSuccessCodeAsync(HttpResponseMessage response)
         {
             if (AlwaysEnsureSuccessCode)
                 response.EnsureSuccessStatusCode();

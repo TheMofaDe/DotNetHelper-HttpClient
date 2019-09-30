@@ -55,13 +55,13 @@
                           <a href="../tutorials/index.html" title="Tutorials">Tutorials</a>
                       </li>
                       <li>
-                          <a href="%24safeprojectname%24.html" title="API">API</a>
+                          <a href="DotNetHelper-HttpClient.html" title="API">API</a>
                       </li>
                       <li>
-                          <a href="https://github.com/TheMofaDe/$safeprojectname$/blob/master/CHANGELOG.md" title="Change Log">Change Log</a>
+                          <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/CHANGELOG.md" title="Change Log">Change Log</a>
                       </li>
                       <li>
-                          <a href="https://github.com/TheMofaDe/$safeprojectname$" title="Github">Github</a>
+                          <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient" title="Github">Github</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -241,7 +241,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.%23ctor(System.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L73">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L72">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor_System_Text_Encoding_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor(System.Text.Encoding)">HttpRestfulClient(Encoding)</h4>
@@ -463,14 +463,203 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String%2CSystem.IO.FileStream%2CSystem.IProgress%7BSystem.Double%7D%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L452">View Source</a>
+  </span>
+  <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile*"></a>
+  <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])">DownloadFile(String, FileStream, IProgress&lt;Double&gt;, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Downloads file from url as an asynchronous operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DownloadFile(string url, FileStream fileStream, IProgress&lt;double&gt; progress, byte[] buffer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filestream">FileStream</a></td>
+        <td><span class="parametername">fileStream</span></td>
+        <td><p>The filestream that content will be written to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>The progress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Task&lt;System.Boolean&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String%2CSystem.IO.FileStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L393">View Source</a>
+  </span>
+  <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync*"></a>
+  <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream)">DownloadFileAsync(String, FileStream)</h4>
+  <div class="markdown level1 summary"><p>Downloads the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DownloadFileAsync(string url, FileStream fileStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filestream">FileStream</a></td>
+        <td><span class="parametername">fileStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p><code>true</code> if XXXX, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String%2CSystem.IO.FileStream%2CSystem.IProgress%7BSystem.Double%7D%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L415">View Source</a>
+  </span>
+  <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync*"></a>
+  <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])">DownloadFileAsync(String, FileStream, IProgress&lt;Double&gt;, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Downloads file from url as an asynchronous operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DownloadFileAsync(string url, FileStream fileStream, IProgress&lt;double&gt; progress, byte[] buffer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filestream">FileStream</a></td>
+        <td><span class="parametername">fileStream</span></td>
+        <td><p>The filestream that content will be written to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>The progress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>Task&lt;System.Boolean&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytes_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L506">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L298">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytes_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytes_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetBytes(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
-  <div class="markdown level1 summary"><p>Executes the get bytes.</p>
+  <div class="markdown level1 summary"><p>Execute get bytes as an asynchronous operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -530,7 +719,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><p>System.Byte[].</p>
+        <td><p>Task&lt;System.Byte[]&gt;.</p>
 </td>
       </tr>
     </tbody>
@@ -540,7 +729,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytesAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L293">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L274">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytesAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytesAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetBytesAsync(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -614,7 +803,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L234">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L216">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponse_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetHttpResponse(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -688,7 +877,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L213">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L195">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponseAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetHttpResponseAsync(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -762,7 +951,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L197">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L179">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponse_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetResponse(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -836,7 +1025,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L176">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L158">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponseAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetResponseAsync(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -910,7 +1099,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStream_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L276">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L258">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStream_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStream_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetStream(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -984,7 +1173,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStreamAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L251">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L233">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStreamAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStreamAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetStreamAsync(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -1058,11 +1247,11 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetType__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType%60%601(System.Func%7BSystem.String%2C%60%600%7D%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L540">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L338">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetType_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetType__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetType&lt;T&gt;(Func&lt;String, T&gt;, String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
-  <div class="markdown level1 summary"><p>Executes the type of the get.</p>
+  <div class="markdown level1 summary"><p>execute get type as an asynchronous operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1127,7 +1316,7 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>T.</p>
+        <td><p>Task&lt;T&gt;.</p>
 </td>
       </tr>
     </tbody>
@@ -1152,7 +1341,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetTypeAsync__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync%60%601(System.Func%7BSystem.String%2C%60%600%7D%2CSystem.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L318">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L314">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetTypeAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetTypeAsync__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetTypeAsync&lt;T&gt;(Func&lt;String, T&gt;, String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -1246,7 +1435,7 @@
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocument_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L571">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L381">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocument_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocument_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetXmlDocument(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
@@ -1317,10 +1506,84 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.List%7BDotNetHelper_HttpClient.Models.Parameter%7D%2CDotNetHelper_HttpClient.Enum.Method%2CSystem.Net.Http.HttpContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L355">View Source</a>
+  </span>
+  <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync*"></a>
+  <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)">ExecuteGetXmlDocumentAsync(String, String, List&lt;Parameter&gt;, Method, HttpContent)</h4>
+  <div class="markdown level1 summary"><p>Executes the get XML document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;XmlDocument&gt; ExecuteGetXmlDocumentAsync(string baseurl, string resource, List&lt;Parameter&gt; headers, Method method, HttpContent content = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">baseurl</span></td>
+        <td><p>The baseurl.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DotNetHelper_HttpClient.Models.Parameter.html">Parameter</a>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>The headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_HttpClient.Enum.Method.html">Method</a></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>The method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a>&gt;</td>
+        <td><p>XmlDocument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/new/master/apiSpec/new?filename=DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_System_Net_Http_HttpClientHandler_System_Boolean_.md&amp;value=---%0Auid%3A%20DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L81">View Source</a>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/src/DotNetHelper-HttpClient/Services/HttpRestfulClient.cs/#L79">View Source</a>
   </span>
   <a id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize*"></a>
   <h4 id="DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_System_Net_Http_HttpClientHandler_System_Boolean_" data-uid="DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)">ReInitialize(HttpClientHandler, Boolean)</h4>

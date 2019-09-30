@@ -95,14 +95,15 @@ namespace DotNetHelper_HttpClient_Tests
             Assert.AreEqual(expected, output);
         }
 
-        [Test] public void Test_CreateUrl_With_UrlSegment()
+        [Test]
+        public void Test_CreateUrl_With_UrlSegment()
         {
             var url = "https://jsonplaceholder.typicode.com/todos";
 
-         
-           // var output = new Uri(URLHelper.CreateUrl("https://jsonplaceholder.typicode.com", "todos", parameters));
 
-        //    Assert.AreEqual(new Uri(url), output);
+            // var output = new Uri(URLHelper.CreateUrl("https://jsonplaceholder.typicode.com", "todos", parameters));
+
+            //    Assert.AreEqual(new Uri(url), output);
         }
 
     }

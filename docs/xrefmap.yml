@@ -79,12 +79,6 @@ references:
   commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.QueryString
   fullName: DotNetHelper_HttpClient.Enum.ParameterType.QueryString
   nameWithType: ParameterType.QueryString
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  name: UrlSegment
-  href: api/DotNetHelper_HttpClient.Enum.ParameterType.html#DotNetHelper_HttpClient_Enum_ParameterType_UrlSegment
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  nameWithType: ParameterType.UrlSegment
 - uid: DotNetHelper_HttpClient.Extension
   name: DotNetHelper_HttpClient.Extension
   href: api/DotNetHelper_HttpClient.Extension.html
@@ -585,6 +579,44 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
   nameWithType: HttpRestfulClient.DefaultTimeout
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  name: DownloadFile(String, FileStream, IProgress<Double>, Byte[])
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
+  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  name.vb: DownloadFile(String, FileStream, IProgress(Of Double), Byte())
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
+  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
+  nameWithType: HttpRestfulClient.DownloadFile(String, FileStream, IProgress<Double>, Byte[])
+  nameWithType.vb: HttpRestfulClient.DownloadFile(String, FileStream, IProgress(Of Double), Byte())
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile*
+  name: DownloadFile
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_
+  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile
+  isSpec: "True"
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile
+  nameWithType: HttpRestfulClient.DownloadFile
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  name: DownloadFileAsync(String, FileStream)
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_
+  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream)
+  nameWithType: HttpRestfulClient.DownloadFileAsync(String, FileStream)
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  name: DownloadFileAsync(String, FileStream, IProgress<Double>, Byte[])
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
+  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  name.vb: DownloadFileAsync(String, FileStream, IProgress(Of Double), Byte())
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
+  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
+  nameWithType: HttpRestfulClient.DownloadFileAsync(String, FileStream, IProgress<Double>, Byte[])
+  nameWithType.vb: HttpRestfulClient.DownloadFileAsync(String, FileStream, IProgress(Of Double), Byte())
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync*
+  name: DownloadFileAsync
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync
+  isSpec: "True"
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync
+  nameWithType: HttpRestfulClient.DownloadFileAsync
 - uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
   name: Encoding
   href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Encoding
@@ -774,6 +806,22 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument
   nameWithType: HttpRestfulClient.ExecuteGetXmlDocument
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  name: ExecuteGetXmlDocumentAsync(String, String, List<Parameter>, Method, HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  name.vb: ExecuteGetXmlDocumentAsync(String, String, List(Of Parameter), Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: HttpRestfulClient.ExecuteGetXmlDocumentAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: HttpRestfulClient.ExecuteGetXmlDocumentAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync*
+  name: ExecuteGetXmlDocumentAsync
+  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync
+  isSpec: "True"
+  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync
+  nameWithType: HttpRestfulClient.ExecuteGetXmlDocumentAsync
 - uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
   name: Handler
   href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Handler

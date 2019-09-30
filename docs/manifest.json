@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Enum.ParameterType.html",
-          "hash": "XVzqcGmnmbiMr2Z+BJqRXw=="
+          "hash": "4mpdfSj2ZyDN3j2k5fuobQ=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Enum.html",
-          "hash": "VIcqz8wrDuVvRJSpSEKstA=="
+          "hash": "u4qQBm7mnW70I2+bAeX8cQ=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Models.Parameter.html",
-          "hash": "muz7Qqvc+fw/StLAaK3utQ=="
+          "hash": "O50M7ClXTQwEpwgw71eWnA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Models.html",
-          "hash": "Scy7OpXDvWhY1HFfoCiyaQ=="
+          "hash": "yg5Vu4553ZRqIABk0MJnOg=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html",
-          "hash": "3q56666h0QkdmSd3hPwPZA=="
+          "hash": "oJzft+8Rn1IYm9VDYqpJTQ=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DotNetHelper_HttpClient.Services.html",
-          "hash": "gXRC20p+WPmkbDpkkBbFhw=="
+          "hash": "F6d4waVc53O0/9jlhtM+gw=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "sAAi9LQfGVU1G8Ht3CE6gQ=="
+          "hash": "ND8B+WUes5mZc2gyyHa7Vg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "oSFonqYHd42fsvjECO1I4w=="
+          "hash": "uNvoRFBil8APbsUPUfU+fQ=="
         }
       },
       "is_incremental": false,
@@ -331,12 +331,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.41.0.0 to 2.44.0.0.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "DocfxVersionChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ResourceDocumentProcessor": {
@@ -347,16 +345,16 @@
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 16,
-          "skipped_file_count": 0
+          "skipped_file_count": 14
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 5,
-          "skipped_file_count": 0
+          "skipped_file_count": 5
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

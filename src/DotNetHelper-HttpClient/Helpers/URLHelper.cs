@@ -101,7 +101,7 @@ namespace DotNetHelper_HttpClient.Helpers
                 resource = resource.EndsWith("&") ? resource.Remove(resource.Length - 1) : resource;
             }
 
-           
+
             return baseurl + resource;
         }
 

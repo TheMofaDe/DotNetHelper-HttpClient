@@ -8,7 +8,6 @@ items:
   - DotNetHelper_HttpClient.Enum.ParameterType.Cookie
   - DotNetHelper_HttpClient.Enum.ParameterType.HttpHeader
   - DotNetHelper_HttpClient.Enum.ParameterType.QueryString
-  - DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
   langs:
   - csharp
   - vb
@@ -74,40 +73,6 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  id: UrlSegment
-  parent: DotNetHelper_HttpClient.Enum.ParameterType
-  langs:
-  - csharp
-  - vb
-  name: UrlSegment
-  nameWithType: ParameterType.UrlSegment
-  fullName: DotNetHelper_HttpClient.Enum.ParameterType.UrlSegment
-  type: Field
-  source:
-    remote:
-      path: src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
-    id: UrlSegment
-    path: ../src/DotNetHelper-HttpClient/Enum/ParameterType.cs
-    startLine: 25
-  assemblies:
-  - DotNetHelper-HttpClient
-  namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe get or post\n"
-  example: []
-  syntax:
-    content: UrlSegment = 1
-    return:
-      type: DotNetHelper_HttpClient.Enum.ParameterType
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
 - uid: DotNetHelper_HttpClient.Enum.ParameterType.HttpHeader
   commentId: F:DotNetHelper_HttpClient.Enum.ParameterType.HttpHeader
   id: HttpHeader
@@ -130,10 +95,10 @@ items:
   assemblies:
   - DotNetHelper-HttpClient
   namespace: DotNetHelper_HttpClient.Enum
-  summary: "\nThe HTTP header\n"
+  summary: "\nThe get or post\n"
   example: []
   syntax:
-    content: HttpHeader = 2
+    content: HttpHeader = 1
     return:
       type: DotNetHelper_HttpClient.Enum.ParameterType
   modifiers.csharp:
@@ -167,7 +132,7 @@ items:
   summary: "\nThe request body\n"
   example: []
   syntax:
-    content: QueryString = 3
+    content: QueryString = 2
     return:
       type: DotNetHelper_HttpClient.Enum.ParameterType
   modifiers.csharp:

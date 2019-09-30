@@ -16,8 +16,11 @@ namespace DotNetHelper_HttpClient_Tests
 
         public JsonObject ExpectedValue { get; set; } = new JsonObject()
         {
-            Completed = false,Id = 1
-            ,UserId = 1,Title = "delectus aut autem"
+            Completed = false,
+            Id = 1
+            ,
+            UserId = 1,
+            Title = "delectus aut autem"
         };
 
 
@@ -47,7 +50,7 @@ namespace DotNetHelper_HttpClient_Tests
         {
             var client = new HttpRestfulClient(Encoding.UTF8)
             {
-                Client = {BaseAddress = new Uri("https://jsonplaceholder.typicode.com/")}
+                Client = { BaseAddress = new Uri("https://jsonplaceholder.typicode.com/") }
             };
             var json = client.ExecuteGetResponse("todos/1", null, null, Method.Get);
             var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
