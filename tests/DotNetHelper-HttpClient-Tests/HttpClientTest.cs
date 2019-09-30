@@ -38,7 +38,7 @@ namespace DotNetHelper_HttpClient_Tests
         [Test]
         public void Test_GetReponse_AsString()
         {
-            var client = new HttpRestfulClient(Encoding.UTF8);
+            var client = new RestClient(Encoding.UTF8);
             var json = client.ExecuteGetResponse("https://jsonplaceholder.typicode.com/todos/1", null, null, Method.Get);
             var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
             Assert.IsTrue(IsAMatch(ExpectedValue, jsonObject));
@@ -48,7 +48,7 @@ namespace DotNetHelper_HttpClient_Tests
         [Test]
         public void Test_BaseUrl_Is_Used()
         {
-            var client = new HttpRestfulClient(Encoding.UTF8)
+            var client = new RestClient(Encoding.UTF8)
             {
                 Client = { BaseAddress = new Uri("https://jsonplaceholder.typicode.com/") }
             };

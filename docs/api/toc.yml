@@ -22,11 +22,6 @@
     name: HttpContentHelper
   - uid: DotNetHelper_HttpClient.Helpers.URLHelper
     name: URLHelper
-- uid: DotNetHelper_HttpClient.Interface
-  name: DotNetHelper_HttpClient.Interface
-  items:
-  - uid: DotNetHelper_HttpClient.Interface.IRestfulClient
-    name: IRestfulClient
 - uid: DotNetHelper_HttpClient.Models
   name: DotNetHelper_HttpClient.Models
   items:
@@ -35,5 +30,5 @@
 - uid: DotNetHelper_HttpClient.Services
   name: DotNetHelper_HttpClient.Services
   items:
-  - uid: DotNetHelper_HttpClient.Services.HttpRestfulClient
-    name: HttpRestfulClient
+  - uid: DotNetHelper_HttpClient.Services.RestClient
+    name: RestClient

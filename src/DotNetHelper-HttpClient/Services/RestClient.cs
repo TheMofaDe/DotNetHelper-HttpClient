@@ -8,20 +8,19 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Serialization;
 using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Extension;
 using DotNetHelper_HttpClient.Helpers;
-using DotNetHelper_HttpClient.Interface;
+
 using DotNetHelper_HttpClient.Models;
-using Polly;
+
 
 namespace DotNetHelper_HttpClient.Services
 {
     /// <summary>
     /// A Awesome Class For Restful Api Calls & And Downloading Files HttpRestfulClient.
     /// </summary>
-    public class HttpRestfulClient : IRestfulClient
+    public class RestClient
     {
 
 
@@ -64,12 +63,12 @@ namespace DotNetHelper_HttpClient.Services
         public Func<Task<HttpResponseMessage>> HttpRequestExecuteAsync { get; set; }
 
 
-        public HttpRestfulClient()
+        public RestClient()
         {
             Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
         }
 
-        public HttpRestfulClient(Encoding encoding)
+        public RestClient(Encoding encoding)
         {
             Encoding = encoding;
             Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
@@ -402,6 +401,16 @@ namespace DotNetHelper_HttpClient.Services
 
 
 
+        /// <summary>
+        /// Downloads the file.
+        /// </summary>
+        /// <param name="url">The URL.</param>
+        /// <param name="fileStream"></param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public void DownloadFile(string url, FileStream fileStream)
+        {
+            AsyncHelper.RunSync(() => DownloadFileAsync(url, fileStream));
+        }
 
 
         /// <summary>
@@ -412,7 +421,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="progress">The progress.</param>
         /// <param name="buffer"></param>
         /// <returns>Task&lt;System.Boolean&gt;.</returns>
-        public async Task<bool> DownloadFileAsync(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
+        public async Task DownloadFileAsync(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
         {
             progress.Report(10);
             using (var response = await ExecuteGetStreamAsync(url, null, null, Method.Get))
@@ -420,7 +429,7 @@ namespace DotNetHelper_HttpClient.Services
                 if (response == null || response.Length <= 0)
                 {
                     progress.Report(100);
-                    return true;
+                    return;
                 }
                 if (buffer == null) buffer = new byte[4 * 1024];
                 int read;
@@ -435,7 +444,7 @@ namespace DotNetHelper_HttpClient.Services
                         progress.Report((Convert.ToInt32(realprogress) / 2) + 50);
                     await fileStream.WriteAsync(buffer, 0, read, CancellationToken.None);
                 }
-                return true;
+                return;
             }
         }
 
@@ -449,9 +458,9 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="progress">The progress.</param>
         /// <param name="buffer"></param>
         /// <returns>Task&lt;System.Boolean&gt;.</returns>
-        public bool DownloadFile(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
+        public void DownloadFile(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
         {
-            return AsyncHelper.RunSync(() => DownloadFileAsync(url, fileStream, progress, buffer));
+            AsyncHelper.RunSync(() => DownloadFileAsync(url, fileStream, progress, buffer));
         }
 
 

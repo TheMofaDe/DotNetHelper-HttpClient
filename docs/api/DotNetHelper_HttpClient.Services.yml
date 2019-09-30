@@ -4,7 +4,7 @@ items:
   commentId: N:DotNetHelper_HttpClient.Services
   id: DotNetHelper_HttpClient.Services
   children:
-  - DotNetHelper_HttpClient.Services.HttpRestfulClient
+  - DotNetHelper_HttpClient.Services.RestClient
   langs:
   - csharp
   - vb
@@ -15,8 +15,8 @@ items:
   assemblies:
   - DotNetHelper-HttpClient
 references:
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient
-  commentId: T:DotNetHelper_HttpClient.Services.HttpRestfulClient
-  name: HttpRestfulClient
-  nameWithType: HttpRestfulClient
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient
+- uid: DotNetHelper_HttpClient.Services.RestClient
+  commentId: T:DotNetHelper_HttpClient.Services.RestClient
+  name: RestClient
+  nameWithType: RestClient
+  fullName: DotNetHelper_HttpClient.Services.RestClient

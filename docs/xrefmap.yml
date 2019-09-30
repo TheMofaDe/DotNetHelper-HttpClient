@@ -234,178 +234,6 @@ references:
   isSpec: "True"
   fullName: DotNetHelper_HttpClient.Helpers.URLHelper.UrlEscape
   nameWithType: URLHelper.UrlEscape
-- uid: DotNetHelper_HttpClient.Interface
-  name: DotNetHelper_HttpClient.Interface
-  href: api/DotNetHelper_HttpClient.Interface.html
-  commentId: N:DotNetHelper_HttpClient.Interface
-  fullName: DotNetHelper_HttpClient.Interface
-  nameWithType: DotNetHelper_HttpClient.Interface
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient
-  name: IRestfulClient
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html
-  commentId: T:DotNetHelper_HttpClient.Interface.IRestfulClient
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient
-  nameWithType: IRestfulClient
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetBytes(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetBytes_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetBytes(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetBytes(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetBytes(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes*
-  name: ExecuteGetBytes
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetBytes_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytes
-  nameWithType: IRestfulClient.ExecuteGetBytes
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetBytesAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetBytesAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetBytesAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetBytesAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetBytesAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync*
-  name: ExecuteGetBytesAsync
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetBytesAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetBytesAsync
-  nameWithType: IRestfulClient.ExecuteGetBytesAsync
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetHttpResponse(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetHttpResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetHttpResponse(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetHttpResponse(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetHttpResponse(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse*
-  name: ExecuteGetHttpResponse
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetHttpResponse_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponse
-  nameWithType: IRestfulClient.ExecuteGetHttpResponse
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetHttpResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetHttpResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetHttpResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetHttpResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetHttpResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync*
-  name: ExecuteGetHttpResponseAsync
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetHttpResponseAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetHttpResponseAsync
-  nameWithType: IRestfulClient.ExecuteGetHttpResponseAsync
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetResponse(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetResponse(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetResponse(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetResponse(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse*
-  name: ExecuteGetResponse
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetResponse_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponse
-  nameWithType: IRestfulClient.ExecuteGetResponse
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync*
-  name: ExecuteGetResponseAsync
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetResponseAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetResponseAsync
-  nameWithType: IRestfulClient.ExecuteGetResponseAsync
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetStream(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetStream_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetStream(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetStream(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetStream(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream*
-  name: ExecuteGetStream
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetStream_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStream
-  nameWithType: IRestfulClient.ExecuteGetStream
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetStreamAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetStreamAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetStreamAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetStreamAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetStreamAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync*
-  name: ExecuteGetStreamAsync
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetStreamAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetStreamAsync
-  nameWithType: IRestfulClient.ExecuteGetStreamAsync
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType*
-  name: ExecuteGetType
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetType_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType
-  nameWithType: IRestfulClient.ExecuteGetType
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetType<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetType__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetType(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetType(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetType<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetType(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync*
-  name: ExecuteGetTypeAsync
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetTypeAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync
-  isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync
-  nameWithType: IRestfulClient.ExecuteGetTypeAsync
-- uid: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name: ExecuteGetTypeAsync<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Interface.IRestfulClient.html#DotNetHelper_HttpClient_Interface_IRestfulClient_ExecuteGetTypeAsync__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
-  name.vb: ExecuteGetTypeAsync(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Interface.IRestfulClient.ExecuteGetTypeAsync(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: IRestfulClient.ExecuteGetTypeAsync<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: IRestfulClient.ExecuteGetTypeAsync(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
 - uid: DotNetHelper_HttpClient.Models
   name: DotNetHelper_HttpClient.Models
   href: api/DotNetHelper_HttpClient.Models.html
@@ -515,352 +343,358 @@ references:
   commentId: N:DotNetHelper_HttpClient.Services
   fullName: DotNetHelper_HttpClient.Services
   nameWithType: DotNetHelper_HttpClient.Services
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient
-  name: HttpRestfulClient
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html
-  commentId: T:DotNetHelper_HttpClient.Services.HttpRestfulClient
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient
-  nameWithType: HttpRestfulClient
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor
-  name: HttpRestfulClient()
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRestfulClient()
-  nameWithType: HttpRestfulClient.HttpRestfulClient()
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor(System.Text.Encoding)
-  name: HttpRestfulClient(Encoding)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor_System_Text_Encoding_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor(System.Text.Encoding)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRestfulClient(System.Text.Encoding)
-  nameWithType: HttpRestfulClient.HttpRestfulClient(Encoding)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor*
-  name: HttpRestfulClient
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient__ctor_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.#ctor
+- uid: DotNetHelper_HttpClient.Services.RestClient
+  name: RestClient
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html
+  commentId: T:DotNetHelper_HttpClient.Services.RestClient
+  fullName: DotNetHelper_HttpClient.Services.RestClient
+  nameWithType: RestClient
+- uid: DotNetHelper_HttpClient.Services.RestClient.#ctor
+  name: RestClient()
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient__ctor
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.#ctor
+  fullName: DotNetHelper_HttpClient.Services.RestClient.RestClient()
+  nameWithType: RestClient.RestClient()
+- uid: DotNetHelper_HttpClient.Services.RestClient.#ctor(System.Text.Encoding)
+  name: RestClient(Encoding)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient__ctor_System_Text_Encoding_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.#ctor(System.Text.Encoding)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.RestClient(System.Text.Encoding)
+  nameWithType: RestClient.RestClient(Encoding)
+- uid: DotNetHelper_HttpClient.Services.RestClient.#ctor*
+  name: RestClient
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient__ctor_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.#ctor
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRestfulClient
-  nameWithType: HttpRestfulClient.HttpRestfulClient
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode
+  fullName: DotNetHelper_HttpClient.Services.RestClient.RestClient
+  nameWithType: RestClient.RestClient
+- uid: DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode
   name: AlwaysEnsureSuccessCode
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_AlwaysEnsureSuccessCode
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode
-  nameWithType: HttpRestfulClient.AlwaysEnsureSuccessCode
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_AlwaysEnsureSuccessCode
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode
+  fullName: DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode
+  nameWithType: RestClient.AlwaysEnsureSuccessCode
+- uid: DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode*
   name: AlwaysEnsureSuccessCode
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_AlwaysEnsureSuccessCode_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_AlwaysEnsureSuccessCode_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.AlwaysEnsureSuccessCode
-  nameWithType: HttpRestfulClient.AlwaysEnsureSuccessCode
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Client
+  fullName: DotNetHelper_HttpClient.Services.RestClient.AlwaysEnsureSuccessCode
+  nameWithType: RestClient.AlwaysEnsureSuccessCode
+- uid: DotNetHelper_HttpClient.Services.RestClient.Client
   name: Client
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Client
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.Client
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Client
-  nameWithType: HttpRestfulClient.Client
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Client*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Client
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.Client
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Client
+  nameWithType: RestClient.Client
+- uid: DotNetHelper_HttpClient.Services.RestClient.Client*
   name: Client
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Client_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.Client
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Client_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.Client
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Client
-  nameWithType: HttpRestfulClient.Client
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Client
+  nameWithType: RestClient.Client
+- uid: DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout
   name: DefaultTimeout
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DefaultTimeout
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
-  nameWithType: HttpRestfulClient.DefaultTimeout
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DefaultTimeout
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout
+  nameWithType: RestClient.DefaultTimeout
+- uid: DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout*
   name: DefaultTimeout
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DefaultTimeout_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DefaultTimeout_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DefaultTimeout
-  nameWithType: HttpRestfulClient.DefaultTimeout
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DefaultTimeout
+  nameWithType: RestClient.DefaultTimeout
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String,System.IO.FileStream)
+  name: DownloadFile(String, FileStream)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFile_System_String_System_IO_FileStream_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String,System.IO.FileStream)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String, System.IO.FileStream)
+  nameWithType: RestClient.DownloadFile(String, FileStream)
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
   name: DownloadFile(String, FileStream, IProgress<Double>, Byte[])
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFile_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
   name.vb: DownloadFile(String, FileStream, IProgress(Of Double), Byte())
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
-  nameWithType: HttpRestfulClient.DownloadFile(String, FileStream, IProgress<Double>, Byte[])
-  nameWithType.vb: HttpRestfulClient.DownloadFile(String, FileStream, IProgress(Of Double), Byte())
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.DownloadFile(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
+  nameWithType: RestClient.DownloadFile(String, FileStream, IProgress<Double>, Byte[])
+  nameWithType.vb: RestClient.DownloadFile(String, FileStream, IProgress(Of Double), Byte())
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFile*
   name: DownloadFile
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFile_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFile_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.DownloadFile
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFile
-  nameWithType: HttpRestfulClient.DownloadFile
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFile
+  nameWithType: RestClient.DownloadFile
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String,System.IO.FileStream)
   name: DownloadFileAsync(String, FileStream)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream)
-  nameWithType: HttpRestfulClient.DownloadFileAsync(String, FileStream)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFileAsync_System_String_System_IO_FileStream_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String, System.IO.FileStream)
+  nameWithType: RestClient.DownloadFileAsync(String, FileStream)
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
   name: DownloadFileAsync(String, FileStream, IProgress<Double>, Byte[])
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFileAsync_System_String_System_IO_FileStream_System_IProgress_System_Double__System_Byte___
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String,System.IO.FileStream,System.IProgress{System.Double},System.Byte[])
   name.vb: DownloadFileAsync(String, FileStream, IProgress(Of Double), Byte())
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
-  nameWithType: HttpRestfulClient.DownloadFileAsync(String, FileStream, IProgress<Double>, Byte[])
-  nameWithType.vb: HttpRestfulClient.DownloadFileAsync(String, FileStream, IProgress(Of Double), Byte())
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress<System.Double>, System.Byte[])
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync(System.String, System.IO.FileStream, System.IProgress(Of System.Double), System.Byte())
+  nameWithType: RestClient.DownloadFileAsync(String, FileStream, IProgress<Double>, Byte[])
+  nameWithType.vb: RestClient.DownloadFileAsync(String, FileStream, IProgress(Of Double), Byte())
+- uid: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync*
   name: DownloadFileAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_DownloadFileAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_DownloadFileAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.DownloadFileAsync
-  nameWithType: HttpRestfulClient.DownloadFileAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
+  fullName: DotNetHelper_HttpClient.Services.RestClient.DownloadFileAsync
+  nameWithType: RestClient.DownloadFileAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.Encoding
   name: Encoding
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Encoding
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
-  nameWithType: HttpRestfulClient.Encoding
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Encoding
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.Encoding
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Encoding
+  nameWithType: RestClient.Encoding
+- uid: DotNetHelper_HttpClient.Services.RestClient.Encoding*
   name: Encoding
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Encoding_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Encoding_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.Encoding
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Encoding
-  nameWithType: HttpRestfulClient.Encoding
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Encoding
+  nameWithType: RestClient.Encoding
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetBytes(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytes_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetBytes_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetBytes(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetBytes(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetBytes(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetBytes(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetBytes(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes*
   name: ExecuteGetBytes
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytes_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetBytes_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytes
-  nameWithType: HttpRestfulClient.ExecuteGetBytes
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytes
+  nameWithType: RestClient.ExecuteGetBytes
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetBytesAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytesAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetBytesAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetBytesAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetBytesAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetBytesAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetBytesAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetBytesAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync*
   name: ExecuteGetBytesAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetBytesAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetBytesAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetBytesAsync
-  nameWithType: HttpRestfulClient.ExecuteGetBytesAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetBytesAsync
+  nameWithType: RestClient.ExecuteGetBytesAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetHttpResponse(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetHttpResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetHttpResponse(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetHttpResponse(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetHttpResponse(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetHttpResponse(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetHttpResponse(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse*
   name: ExecuteGetHttpResponse
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponse_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetHttpResponse_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponse
-  nameWithType: HttpRestfulClient.ExecuteGetHttpResponse
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponse
+  nameWithType: RestClient.ExecuteGetHttpResponse
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetHttpResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetHttpResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetHttpResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetHttpResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetHttpResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetHttpResponseAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetHttpResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync*
   name: ExecuteGetHttpResponseAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetHttpResponseAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetHttpResponseAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetHttpResponseAsync
-  nameWithType: HttpRestfulClient.ExecuteGetHttpResponseAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetHttpResponseAsync
+  nameWithType: RestClient.ExecuteGetHttpResponseAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetResponse(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetResponse_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetResponse(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetResponse(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetResponse(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetResponse(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetResponse(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse*
   name: ExecuteGetResponse
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponse_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetResponse_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponse
-  nameWithType: HttpRestfulClient.ExecuteGetResponse
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponse
+  nameWithType: RestClient.ExecuteGetResponse
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetResponseAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetResponseAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetResponseAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetResponseAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync*
   name: ExecuteGetResponseAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetResponseAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetResponseAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetResponseAsync
-  nameWithType: HttpRestfulClient.ExecuteGetResponseAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetResponseAsync
+  nameWithType: RestClient.ExecuteGetResponseAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetStream(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStream_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetStream_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetStream(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetStream(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetStream(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetStream(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetStream(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream*
   name: ExecuteGetStream
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStream_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetStream_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStream
-  nameWithType: HttpRestfulClient.ExecuteGetStream
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStream
+  nameWithType: RestClient.ExecuteGetStream
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetStreamAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStreamAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetStreamAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetStreamAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetStreamAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetStreamAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetStreamAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetStreamAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync*
   name: ExecuteGetStreamAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetStreamAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetStreamAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetStreamAsync
-  nameWithType: HttpRestfulClient.ExecuteGetStreamAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetStreamAsync
+  nameWithType: RestClient.ExecuteGetStreamAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType*
   name: ExecuteGetType
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetType_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetType_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType
-  nameWithType: HttpRestfulClient.ExecuteGetType
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType
+  nameWithType: RestClient.ExecuteGetType
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetType<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetType__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetType__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetType(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetType(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetType<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetType(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetType(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetType<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetType(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync*
   name: ExecuteGetTypeAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetTypeAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetTypeAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync
-  nameWithType: HttpRestfulClient.ExecuteGetTypeAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync
+  nameWithType: RestClient.ExecuteGetTypeAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetTypeAsync<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetTypeAsync__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetTypeAsync__1_System_Func_System_String___0__System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync``1(System.Func{System.String,``0},System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetTypeAsync(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetTypeAsync(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetTypeAsync<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetTypeAsync(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync<T>(System.Func<System.String, T>, System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetTypeAsync(Of T)(System.Func(Of System.String, T), System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetTypeAsync<T>(Func<String, T>, String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetTypeAsync(Of T)(Func(Of String, T), String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetXmlDocument(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocument_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetXmlDocument_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetXmlDocument(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetXmlDocument(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetXmlDocument(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetXmlDocument(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetXmlDocument(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument*
   name: ExecuteGetXmlDocument
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocument_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetXmlDocument_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocument
-  nameWithType: HttpRestfulClient.ExecuteGetXmlDocument
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocument
+  nameWithType: RestClient.ExecuteGetXmlDocument
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name: ExecuteGetXmlDocumentAsync(String, String, List<Parameter>, Method, HttpContent)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetXmlDocumentAsync_System_String_System_String_System_Collections_Generic_List_DotNetHelper_HttpClient_Models_Parameter__DotNetHelper_HttpClient_Enum_Method_System_Net_Http_HttpContent_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync(System.String,System.String,System.Collections.Generic.List{DotNetHelper_HttpClient.Models.Parameter},DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
   name.vb: ExecuteGetXmlDocumentAsync(String, String, List(Of Parameter), Method, HttpContent)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  fullName.vb: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
-  nameWithType: HttpRestfulClient.ExecuteGetXmlDocumentAsync(String, String, List<Parameter>, Method, HttpContent)
-  nameWithType.vb: HttpRestfulClient.ExecuteGetXmlDocumentAsync(String, String, List(Of Parameter), Method, HttpContent)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync*
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List<DotNetHelper_HttpClient.Models.Parameter>, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync(System.String, System.String, System.Collections.Generic.List(Of DotNetHelper_HttpClient.Models.Parameter), DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  nameWithType: RestClient.ExecuteGetXmlDocumentAsync(String, String, List<Parameter>, Method, HttpContent)
+  nameWithType.vb: RestClient.ExecuteGetXmlDocumentAsync(String, String, List(Of Parameter), Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync*
   name: ExecuteGetXmlDocumentAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ExecuteGetXmlDocumentAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ExecuteGetXmlDocumentAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ExecuteGetXmlDocumentAsync
-  nameWithType: HttpRestfulClient.ExecuteGetXmlDocumentAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ExecuteGetXmlDocumentAsync
+  nameWithType: RestClient.ExecuteGetXmlDocumentAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.Handler
   name: Handler
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Handler
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
-  nameWithType: HttpRestfulClient.Handler
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Handler
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.Handler
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Handler
+  nameWithType: RestClient.Handler
+- uid: DotNetHelper_HttpClient.Services.RestClient.Handler*
   name: Handler
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_Handler_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_Handler_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.Handler
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.Handler
-  nameWithType: HttpRestfulClient.Handler
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  fullName: DotNetHelper_HttpClient.Services.RestClient.Handler
+  nameWithType: RestClient.Handler
+- uid: DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync
   name: HttpRequestExecuteAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_HttpRequestExecuteAsync
-  commentId: P:DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
-  nameWithType: HttpRestfulClient.HttpRequestExecuteAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_HttpRequestExecuteAsync
+  commentId: P:DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync
+  fullName: DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync
+  nameWithType: RestClient.HttpRequestExecuteAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync*
   name: HttpRequestExecuteAsync
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_HttpRequestExecuteAsync_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_HttpRequestExecuteAsync_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.HttpRequestExecuteAsync
-  nameWithType: HttpRestfulClient.HttpRequestExecuteAsync
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.HttpRequestExecuteAsync
+  nameWithType: RestClient.HttpRequestExecuteAsync
+- uid: DotNetHelper_HttpClient.Services.RestClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)
   name: ReInitialize(HttpClientHandler, Boolean)
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_System_Net_Http_HttpClientHandler_System_Boolean_
-  commentId: M:DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize(System.Net.Http.HttpClientHandler, System.Boolean)
-  nameWithType: HttpRestfulClient.ReInitialize(HttpClientHandler, Boolean)
-- uid: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize*
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ReInitialize_System_Net_Http_HttpClientHandler_System_Boolean_
+  commentId: M:DotNetHelper_HttpClient.Services.RestClient.ReInitialize(System.Net.Http.HttpClientHandler,System.Boolean)
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ReInitialize(System.Net.Http.HttpClientHandler, System.Boolean)
+  nameWithType: RestClient.ReInitialize(HttpClientHandler, Boolean)
+- uid: DotNetHelper_HttpClient.Services.RestClient.ReInitialize*
   name: ReInitialize
-  href: api/DotNetHelper_HttpClient.Services.HttpRestfulClient.html#DotNetHelper_HttpClient_Services_HttpRestfulClient_ReInitialize_
-  commentId: Overload:DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize
+  href: api/DotNetHelper_HttpClient.Services.RestClient.html#DotNetHelper_HttpClient_Services_RestClient_ReInitialize_
+  commentId: Overload:DotNetHelper_HttpClient.Services.RestClient.ReInitialize
   isSpec: "True"
-  fullName: DotNetHelper_HttpClient.Services.HttpRestfulClient.ReInitialize
-  nameWithType: HttpRestfulClient.ReInitialize
+  fullName: DotNetHelper_HttpClient.Services.RestClient.ReInitialize
+  nameWithType: RestClient.ReInitialize
 - uid: TSD
   name: THIS IS THE HOME PAGE TO TUTORIALS
   href: tutorials/index.html
