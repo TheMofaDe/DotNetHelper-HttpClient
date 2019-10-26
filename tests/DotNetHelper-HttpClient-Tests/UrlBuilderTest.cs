@@ -98,7 +98,7 @@ namespace DotNetHelper_HttpClient_Tests
         [Test]
         public void Test_CreateUrl_With_UrlSegment()
         {
-            var url = "https://jsonplaceholder.typicode.com/todos";
+            //var url = "https://jsonplaceholder.typicode.com/todos";
 
 
             // var output = new Uri(URLHelper.CreateUrl("https://jsonplaceholder.typicode.com", "todos", parameters));
