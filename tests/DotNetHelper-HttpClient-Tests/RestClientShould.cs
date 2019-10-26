@@ -36,7 +36,7 @@ namespace DotNetHelper_HttpClient_Tests
         [Test]
         public void GetString_Return_Expected_String()
         {
-            var str = RestClient.GetString($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+            var str = RestClient.GetString($"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
             Assert.That(str.Equals(ExpectedJson));
         }
 
@@ -45,7 +45,7 @@ namespace DotNetHelper_HttpClient_Tests
         {
             var bytes = RestClient.GetBytes($"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
             var expectedBytes = Encoding.Default.GetBytes(ExpectedJson);
-            Assert.That(bytes.Compare(0,expectedBytes,0,bytes.Length));
+            Assert.That(bytes.Compare(0, expectedBytes, 0, bytes.Length));
         }
 
         [Test]
@@ -64,7 +64,7 @@ namespace DotNetHelper_HttpClient_Tests
         [Test]
         public void Get_Return_Expected_Object()
         {
-            var jsonObject = RestClient.Get(JsonConvert.DeserializeObject<JsonObject>,$"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
+            var jsonObject = RestClient.Get(JsonConvert.DeserializeObject<JsonObject>, $"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
             Assert.That(IsAMatch(ExpectedValue, jsonObject));
         }
 
@@ -83,9 +83,9 @@ namespace DotNetHelper_HttpClient_Tests
         public void DownloadFile_Works()
         {
             var fileName = Path.Combine(Environment.CurrentDirectory, "TestFile.json");
-            using (var fileStream = new FileStream(fileName,FileMode.Create))
+            using (var fileStream = new FileStream(fileName, FileMode.Create))
             {
-                 RestClient.DownloadFile($"https://jsonplaceholder.typicode.com/todos/1",fileStream);
+                RestClient.DownloadFile($"https://jsonplaceholder.typicode.com/todos/1", fileStream);
             }
             Assert.That(File.Exists(fileName));
 

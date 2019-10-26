@@ -19,7 +19,7 @@ using DotNetHelper_HttpClient.Models;
 
 namespace DotNetHelper_HttpClient.Services
 {
- 
+
 
     /// <summary>
     /// A Awesome Class For Restful Api Calls & And Downloading Files HttpRestfulClient.
@@ -40,9 +40,9 @@ namespace DotNetHelper_HttpClient.Services
         public Func<Task<HttpResponseMessage>> HttpRequestExecuteAsync { get; set; }
 
 
-        public RestClient(HttpMessageHandler httpClientHandler, bool disposeHandler) : base(httpClientHandler,disposeHandler)
+        public RestClient(HttpMessageHandler httpClientHandler, bool disposeHandler) : base(httpClientHandler, disposeHandler)
         {
-          
+
         }
 
         public RestClient(HttpMessageHandler httpClientHandler) : base(httpClientHandler)
