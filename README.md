@@ -1,6 +1,6 @@
 # DotNetHelper-HttpClient
 
-#### *description.* 
+#### DotNetHelper-HttpClient is a simple lightweight library for execute restful requests. Easy Integration with polly. Support both asynchronous and synchronous
 
 || [**Change Log**][Changelogs] • || [**View on Github**][Github]|| 
 
@@ -15,7 +15,11 @@
 | **Azure Devops** | ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] | 
 
 ## Features
-
+~~~csharp
+var client = new RestClient(Encoding.UTF8);
+var json = client.ExecuteGetResponse("https://jsonplaceholder.typicode.com/todos/1", Method.Get);
+var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
+~~~
 ## Getting Started
 
 ## Documentation

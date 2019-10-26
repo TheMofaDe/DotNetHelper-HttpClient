@@ -11,20 +11,19 @@ using NUnit.Framework;
 namespace DotNetHelper_HttpClient_Tests
 {
     [TestFixture]
-    public class HttpClientTest
+    public class RestClientShould
     {
-
+        public string BaseUrl { get; } = $"https://jsonplaceholder.typicode.com/";
         public JsonObject ExpectedValue { get; set; } = new JsonObject()
         {
             Completed = false,
-            Id = 1
-            ,
+            Id = 1,
             UserId = 1,
             Title = "delectus aut autem"
         };
 
 
-        public bool IsAMatch(JsonObject one, JsonObject two)
+        private bool IsAMatch(JsonObject one, JsonObject two)
         {
             return
             (
@@ -39,10 +38,11 @@ namespace DotNetHelper_HttpClient_Tests
         public void Test_GetReponse_AsString()
         {
             var client = new RestClient(Encoding.UTF8);
-            var json = client.ExecuteGetResponse("https://jsonplaceholder.typicode.com/todos/1", null, null, Method.Get);
+            var json = client.GetString("https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
             var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
             Assert.IsTrue(IsAMatch(ExpectedValue, jsonObject));
         }
+
 
 
         [Test]
@@ -52,7 +52,7 @@ namespace DotNetHelper_HttpClient_Tests
             {
                 Client = { BaseAddress = new Uri("https://jsonplaceholder.typicode.com/") }
             };
-            var json = client.ExecuteGetResponse("todos/1", null, null, Method.Get);
+            var json = client.GetString("todos/1", null, null, Method.Get);
             var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
             Assert.IsTrue(IsAMatch(ExpectedValue, jsonObject));
         }

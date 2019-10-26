@@ -24,7 +24,7 @@ Task("Publish-Coverage")
 	 }else{
 	
          Codecov(new CodecovSettings {
-                Files = new [] { parameters.Paths.Files.TestCoverageOutputFilePath.ToString() }
+                 Files = new [] { parameters.Paths.Files.TestCoverageOutputFilePath.ToString() }
                 ,Token = token
 	    	    ,Required = true
          });
@@ -33,5 +33,5 @@ Task("Publish-Coverage")
 	     
 		 Information("Uploading Coverage File --> " + parameters.Paths.Files.TestCoverageOutputFilePath);
      }
-    
+   
 });
