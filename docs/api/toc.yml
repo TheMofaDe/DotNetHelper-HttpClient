@@ -1,0 +1,39 @@
+### YamlMime:TableOfContent
+- uid: DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  items:
+  - uid: DotNetHelper_HttpClient.Enum.Method
+    name: Method
+  - uid: DotNetHelper_HttpClient.Enum.ParameterType
+    name: ParameterType
+- uid: DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  items:
+  - uid: DotNetHelper_HttpClient.Extension.MethodExtension
+    name: MethodExtension
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+    name: ObjectExtensions
+  - uid: DotNetHelper_HttpClient.Extension.StringExtension
+    name: StringExtension
+- uid: DotNetHelper_HttpClient.Helpers
+  name: DotNetHelper_HttpClient.Helpers
+  items:
+  - uid: DotNetHelper_HttpClient.Helpers.HttpContentHelper
+    name: HttpContentHelper
+  - uid: DotNetHelper_HttpClient.Helpers.URLHelper
+    name: URLHelper
+- uid: DotNetHelper_HttpClient.Interface
+  name: DotNetHelper_HttpClient.Interface
+  items:
+  - uid: DotNetHelper_HttpClient.Interface.IRestClient
+    name: IRestClient
+- uid: DotNetHelper_HttpClient.Models
+  name: DotNetHelper_HttpClient.Models
+  items:
+  - uid: DotNetHelper_HttpClient.Models.Parameter
+    name: Parameter
+- uid: DotNetHelper_HttpClient.Services
+  name: DotNetHelper_HttpClient.Services
+  items:
+  - uid: DotNetHelper_HttpClient.Services.RestClient
+    name: RestClient

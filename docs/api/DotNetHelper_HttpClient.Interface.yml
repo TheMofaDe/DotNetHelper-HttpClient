@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Interface
+  commentId: N:DotNetHelper_HttpClient.Interface
+  id: DotNetHelper_HttpClient.Interface
+  children:
+  - DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_HttpClient.Interface
+  nameWithType: DotNetHelper_HttpClient.Interface
+  fullName: DotNetHelper_HttpClient.Interface
+  type: Namespace
+  assemblies:
+  - DotNetHelper-HttpClient
+references:
+- uid: DotNetHelper_HttpClient.Interface.IRestClient
+  commentId: T:DotNetHelper_HttpClient.Interface.IRestClient
+  parent: DotNetHelper_HttpClient.Interface
+  name: IRestClient
+  nameWithType: IRestClient
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient
+- uid: DotNetHelper_HttpClient.Interface
+  commentId: N:DotNetHelper_HttpClient.Interface
+  name: DotNetHelper_HttpClient.Interface
+  nameWithType: DotNetHelper_HttpClient.Interface
+  fullName: DotNetHelper_HttpClient.Interface

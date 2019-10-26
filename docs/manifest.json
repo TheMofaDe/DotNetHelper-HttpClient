@@ -1,0 +1,387 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Business/TheMoFaDe/Code/TheMofaDe/DotNetHelper-HttpClient/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Enum.Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Enum.Method.html",
+          "hash": "ALfccjUxtEzDTEX2YI29eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Enum.ParameterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Enum.ParameterType.html",
+          "hash": "F+m0AkB2YfY2vnuKulcjmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Enum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Enum.html",
+          "hash": "dRUDFsJulV5gkD1Nl9AkLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.MethodExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.MethodExtension.html",
+          "hash": "AN7w4XYvqmOmSmWhAp/EqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.ObjectExtensions.html",
+          "hash": "dge4RFtMXu3bMq2+0pbRlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.StringExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.StringExtension.html",
+          "hash": "hJx1THHCwFtlIuVS0qWflg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Extension.html",
+          "hash": "N4y0uwTSsaW71kaocOi0sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Helpers.HttpContentHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Helpers.HttpContentHelper.html",
+          "hash": "AdUJJDeLPFvP0mPFUFTnyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Helpers.URLHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Helpers.URLHelper.html",
+          "hash": "dYMX+eNG0JdpmyUQ2M5n3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Helpers.html",
+          "hash": "1lNBz0zsSmDcE/IvNOkqvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Interface.IRestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Interface.IRestClient.html",
+          "hash": "MgkDMtW+n9de/IFJVC/t3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Interface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Interface.html",
+          "hash": "aPL9NM66OaEaXMlt7epENA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Models.Parameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Models.Parameter.html",
+          "hash": "otoJmbjBd0NzXzvMZgCTvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Models.html",
+          "hash": "+ZXBu5ThL+VzbQNm1jiM0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Services.RestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Services.RestClient.html",
+          "hash": "Xs0augxkVMsWmnGJBIav0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper_HttpClient.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper_HttpClient.Services.html",
+          "hash": "mOAtnrupM4UAewtfJLclog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "e7iCR9mZyNrQw//r7+RdZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png",
+          "link_to_path": "C:\\Business\\TheMoFaDe\\Code\\TheMofaDe\\DotNetHelper-HttpClient\\docs/images/icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "0wZk9WvECBKKDqom7CKang=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "langwordmapping/langwordMapping.yml",
+      "output": {
+        "resource": {
+          "relative_path": "langwordmapping/langwordMapping.yml",
+          "link_to_path": "C:\\Business\\TheMoFaDe\\Code\\TheMofaDe\\DotNetHelper-HttpClient\\docs/langwordmapping/langwordMapping.yml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "JWKz8+JMA0lbZZ1GPuG5/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/Attributes/attribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/Attributes/attribute.html",
+          "hash": "S6qMP/mJ81G9JGV5bGr8Wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/GenerateSql/datatable2sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/GenerateSql/datatable2sql.html",
+          "hash": "R0d+dV9kOLj/ULhK+mihQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/GenerateSql/object2sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/GenerateSql/object2sql.html",
+          "hash": "XKKo7x3U+UyQGx+kv8oMwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/index.html",
+          "hash": "lKPXL6ecyUqWN/J1q2yXmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "Ku3uC8uNMfP+72+HoBp5lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

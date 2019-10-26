@@ -1,0 +1,1269 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_HttpClient.Interface.IRestClient
+  commentId: T:DotNetHelper_HttpClient.Interface.IRestClient
+  id: IRestClient
+  parent: DotNetHelper_HttpClient.Interface
+  children:
+  - DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile(System.String,System.IO.FileStream)
+  - DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  - DotNetHelper_HttpClient.Interface.IRestClient.Get``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetAsync``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetBytes(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetStream(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetString(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  - DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  langs:
+  - csharp
+  - vb
+  name: IRestClient
+  nameWithType: IRestClient
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient
+  type: Interface
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: IRestClient
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  syntax:
+    content: public interface IRestClient
+    content.vb: Public Interface IRestClient
+  extensionMethods:
+  - System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetStringAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetStringAsync(String, Method, HttpContent)
+  nameWithType: IRestClient.GetStringAsync(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetStringAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 17
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nexecute get response as an asynchronous operation.\n"
+  example: []
+  syntax:
+    content: Task<string> GetStringAsync(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The url.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Task&lt;System.String>.
+    content.vb: Function GetStringAsync(url As String, method As Method, content As HttpContent = Nothing) As Task(Of String)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetString(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetString(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetString(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetString(String, Method, HttpContent)
+  nameWithType: IRestClient.GetString(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetString(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetString
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 27
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nexecute get response as an synchronous operation.\n"
+  example: []
+  syntax:
+    content: string GetString(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The baseurl.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.String
+      description: Task&lt;System.String>.
+    content.vb: Function GetString(url As String, method As Method, content As HttpContent = Nothing) As String
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetString*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetHttpResponseAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetHttpResponseAsync(String, Method, HttpContent)
+  nameWithType: IRestClient.GetHttpResponseAsync(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetHttpResponseAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 36
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get HTTP response as an asynchronous operation.\n"
+  example: []
+  syntax:
+    content: Task<HttpResponseMessage> GetHttpResponseAsync(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The url.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: Task&lt;HttpResponseMessage>.
+    content.vb: Function GetHttpResponseAsync(url As String, method As Method, content As HttpContent = Nothing) As Task(Of HttpResponseMessage)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetHttpResponse(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetHttpResponse(String, Method, HttpContent)
+  nameWithType: IRestClient.GetHttpResponse(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetHttpResponse
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 45
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get HTTP response as an synchronous operation.\n"
+  example: []
+  syntax:
+    content: HttpResponseMessage GetHttpResponse(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The baseurl.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Net.Http.HttpResponseMessage
+      description: Task&lt;HttpResponseMessage>.
+    content.vb: Function GetHttpResponse(url As String, method As Method, content As HttpContent = Nothing) As HttpResponseMessage
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetStreamAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetStreamAsync(String, Method, HttpContent)
+  nameWithType: IRestClient.GetStreamAsync(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetStreamAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 55
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get stream as an asynchronous operation.\n"
+  example: []
+  syntax:
+    content: Task<Stream> GetStreamAsync(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The url.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: Task&lt;Stream>.
+    content.vb: Function GetStreamAsync(url As String, method As Method, content As HttpContent = Nothing) As Task(Of Stream)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStream(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetStream(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetStream(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetStream(String, Method, HttpContent)
+  nameWithType: IRestClient.GetStream(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStream(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetStream
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 65
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get stream as an synchronous operation.\n"
+  example: []
+  syntax:
+    content: Stream GetStream(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The baseurl.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.IO.Stream
+      description: Task&lt;Stream>.
+    content.vb: Function GetStream(url As String, method As Method, content As HttpContent = Nothing) As Stream
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetStream*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetBytesAsync(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetBytesAsync(String, Method, HttpContent)
+  nameWithType: IRestClient.GetBytesAsync(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetBytesAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 74
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get bytes as an asynchronous operation.\n"
+  example: []
+  syntax:
+    content: Task<byte[]> GetBytesAsync(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The baseurl.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: Task&lt;System.Byte[]>.
+    content.vb: Function GetBytesAsync(url As String, method As Method, content As HttpContent = Nothing) As Task(Of Byte())
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetBytes(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetBytes(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetBytes(System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetBytes(String, Method, HttpContent)
+  nameWithType: IRestClient.GetBytes(String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetBytes(System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetBytes
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 83
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nExecute get bytes as an synchronous operation.\n"
+  example: []
+  syntax:
+    content: byte[] GetBytes(string url, Method method, HttpContent content = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: The baseurl.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    return:
+      type: System.Byte[]
+      description: Task&lt;System.Byte[]>.
+    content.vb: Function GetBytes(url As String, method As Method, content As HttpContent = Nothing) As Byte()
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetBytes*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.GetAsync``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: GetAsync``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<T>(Func<String, T>, String, Method, HttpContent)
+  nameWithType: IRestClient.GetAsync<T>(Func<String, T>, String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync<T>(System.Func<System.String, T>, System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: GetAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 95
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nexecute get type as an asynchronous operation.\n"
+  example: []
+  syntax:
+    content: Task<T> GetAsync<T>(Func<string, T> deserializer, string url, Method method, HttpContent content = null)
+    parameters:
+    - id: deserializer
+      type: System.Func{System.String,{T}}
+      description: ''
+    - id: url
+      type: System.String
+      description: The url.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Task&lt;T>.
+    content.vb: Function GetAsync(Of T)(deserializer As Func(Of String, T), url As String, method As Method, content As HttpContent = Nothing) As Task(Of T)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync*
+  nameWithType.vb: IRestClient.GetAsync(Of T)(Func(Of String, T), String, Method, HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync(Of T)(System.Func(Of System.String, T), System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  name.vb: GetAsync(Of T)(Func(Of String, T), String, Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.Get``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.Get``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  id: Get``1(System.Func{System.String,``0},System.String,DotNetHelper_HttpClient.Enum.Method,System.Net.Http.HttpContent)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(Func<String, T>, String, Method, HttpContent)
+  nameWithType: IRestClient.Get<T>(Func<String, T>, String, Method, HttpContent)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.Get<T>(System.Func<System.String, T>, System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: Get
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 106
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nexecute get type as an synchronous operation.\n"
+  example: []
+  syntax:
+    content: T Get<T>(Func<string, T> deserializer, string url, Method method, HttpContent content = null)
+    parameters:
+    - id: deserializer
+      type: System.Func{System.String,{T}}
+      description: ''
+    - id: url
+      type: System.String
+      description: The url.
+    - id: method
+      type: DotNetHelper_HttpClient.Enum.Method
+      description: The method.
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The content.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: Task&lt;T>.
+    content.vb: Function Get(Of T)(deserializer As Func(Of String, T), url As String, method As Method, content As HttpContent = Nothing) As T
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.Get*
+  nameWithType.vb: IRestClient.Get(Of T)(Func(Of String, T), String, Method, HttpContent)
+  fullName.vb: DotNetHelper_HttpClient.Interface.IRestClient.Get(Of T)(System.Func(Of System.String, T), System.String, DotNetHelper_HttpClient.Enum.Method, System.Net.Http.HttpContent)
+  name.vb: Get(Of T)(Func(Of String, T), String, Method, HttpContent)
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync(System.String,System.IO.FileStream)
+  id: DownloadFileAsync(System.String,System.IO.FileStream)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: DownloadFileAsync(String, FileStream)
+  nameWithType: IRestClient.DownloadFileAsync(String, FileStream)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync(System.String, System.IO.FileStream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: DownloadFileAsync
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 114
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nDownloads the file.\n"
+  example: []
+  syntax:
+    content: Task<bool> DownloadFileAsync(string url, FileStream fileStream)
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL.
+    - id: fileStream
+      type: System.IO.FileStream
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if XXXX, <code>false</code> otherwise.
+    content.vb: Function DownloadFileAsync(url As String, fileStream As FileStream) As Task(Of Boolean)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync*
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile(System.String,System.IO.FileStream)
+  commentId: M:DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile(System.String,System.IO.FileStream)
+  id: DownloadFile(System.String,System.IO.FileStream)
+  parent: DotNetHelper_HttpClient.Interface.IRestClient
+  langs:
+  - csharp
+  - vb
+  name: DownloadFile(String, FileStream)
+  nameWithType: IRestClient.DownloadFile(String, FileStream)
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile(System.String, System.IO.FileStream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-HttpClient.git
+    id: DownloadFile
+    path: ../src/DotNetHelper-HttpClient/Interface/IRestClient.cs
+    startLine: 122
+  assemblies:
+  - DotNetHelper-HttpClient
+  namespace: DotNetHelper_HttpClient.Interface
+  summary: "\nDownloads the file.\n"
+  example: []
+  syntax:
+    content: void DownloadFile(string url, FileStream fileStream)
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL.
+    - id: fileStream
+      type: System.IO.FileStream
+      description: ''
+    content.vb: Sub DownloadFile(url As String, fileStream As FileStream)
+  overload: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile*
+references:
+- uid: DotNetHelper_HttpClient.Interface
+  commentId: N:DotNetHelper_HttpClient.Interface
+  name: DotNetHelper_HttpClient.Interface
+  nameWithType: DotNetHelper_HttpClient.Interface
+  fullName: DotNetHelper_HttpClient.Interface
+- uid: System.Object.DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  parent: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  definition: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  name: IsNullThrow(String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  commentId: M:DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+  isExternal: true
+  name: IsNullThrow(Object, String, Exception)
+  nameWithType: ObjectExtensions.IsNullThrow(Object, String, Exception)
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object, System.String, System.Exception)
+  spec.csharp:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow(System.Object,System.String,System.Exception)
+    name: IsNullThrow
+    nameWithType: ObjectExtensions.IsNullThrow
+    fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions.IsNullThrow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Extension.ObjectExtensions
+  commentId: T:DotNetHelper_HttpClient.Extension.ObjectExtensions
+  parent: DotNetHelper_HttpClient.Extension
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: DotNetHelper_HttpClient.Extension.ObjectExtensions
+- uid: DotNetHelper_HttpClient.Extension
+  commentId: N:DotNetHelper_HttpClient.Extension
+  name: DotNetHelper_HttpClient.Extension
+  nameWithType: DotNetHelper_HttpClient.Extension
+  fullName: DotNetHelper_HttpClient.Extension
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync
+  name: GetStringAsync
+  nameWithType: IRestClient.GetStringAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStringAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper_HttpClient.Enum.Method
+  commentId: T:DotNetHelper_HttpClient.Enum.Method
+  parent: DotNetHelper_HttpClient.Enum
+  name: Method
+  nameWithType: Method
+  fullName: DotNetHelper_HttpClient.Enum.Method
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_HttpClient.Enum
+  commentId: N:DotNetHelper_HttpClient.Enum
+  name: DotNetHelper_HttpClient.Enum
+  nameWithType: DotNetHelper_HttpClient.Enum
+  fullName: DotNetHelper_HttpClient.Enum
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetString*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetString
+  name: GetString
+  nameWithType: IRestClient.GetString
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetString
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync
+  name: GetHttpResponseAsync
+  nameWithType: IRestClient.GetHttpResponseAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponseAsync
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse
+  name: GetHttpResponse
+  nameWithType: IRestClient.GetHttpResponse
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetHttpResponse
+- uid: System.Net.Http.HttpResponseMessage
+  commentId: T:System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync
+  name: GetStreamAsync
+  nameWithType: IRestClient.GetStreamAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStreamAsync
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetStream*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetStream
+  name: GetStream
+  nameWithType: IRestClient.GetStream
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync
+  name: GetBytesAsync
+  nameWithType: IRestClient.GetBytesAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetBytesAsync
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetBytes*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetBytes
+  name: GetBytes
+  nameWithType: IRestClient.GetBytes
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.GetAsync
+  name: GetAsync
+  nameWithType: IRestClient.GetAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.GetAsync
+- uid: System.Func{System.String,{T}}
+  commentId: T:System.Func{System.String,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<String, T>
+  nameWithType: Func<String, T>
+  fullName: System.Func<System.String, T>
+  nameWithType.vb: Func(Of String, T)
+  fullName.vb: System.Func(Of System.String, T)
+  name.vb: Func(Of String, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.Get*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.Get
+  name: Get
+  nameWithType: IRestClient.Get
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.Get
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync
+  name: DownloadFileAsync
+  nameWithType: IRestClient.DownloadFileAsync
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFileAsync
+- uid: System.IO.FileStream
+  commentId: T:System.IO.FileStream
+  parent: System.IO
+  isExternal: true
+  name: FileStream
+  nameWithType: FileStream
+  fullName: System.IO.FileStream
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile*
+  commentId: Overload:DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile
+  name: DownloadFile
+  nameWithType: IRestClient.DownloadFile
+  fullName: DotNetHelper_HttpClient.Interface.IRestClient.DownloadFile
