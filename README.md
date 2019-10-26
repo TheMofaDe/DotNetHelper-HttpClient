@@ -36,10 +36,10 @@ var client = new RestClient();
 var bytes = client.GetBytes($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
 ~~~
 
-#### Get HttpResposne from rest api
+#### Get HttpResponseMessage from rest api
 ~~~csharp
 var client = new RestClient();
-var httpResponse = client.GetStream($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+var httpResponse = client.GetHttpResponse($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
 ~~~
 
 #### Get Generic Type from rest api

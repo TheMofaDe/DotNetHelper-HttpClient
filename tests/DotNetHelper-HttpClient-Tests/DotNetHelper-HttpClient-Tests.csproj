@@ -2,10 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net452;net45;netcoreapp2.2</TargetFrameworks>
-
     <IsPackable>false</IsPackable>
-
-    <RootNamespace>DotNetHelper_HttpClient_Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
