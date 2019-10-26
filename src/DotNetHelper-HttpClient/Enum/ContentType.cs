@@ -1,25 +1,5 @@
 ﻿namespace DotNetHelper_HttpClient.Enum
 {
-    ///// <summary>
-    ///// Enum ContentType
-    ///// </summary>
-    //public enum ContentType
-    //{
-    //    /// <summary>
-    //    /// The string
-    //    /// </summary>
-    //    String, Bytes nn
-    //}
-
-
-    //public enum ServerSideApiObjectType
-    //{
-    //    /// <summary>
-    //    /// The string
-    //    /// </summary>
-    //    String, Model
-    //}
-
 
     /// <summary>
     /// HTTP method to use when making requests

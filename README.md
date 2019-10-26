@@ -1,6 +1,6 @@
 # DotNetHelper-HttpClient
 
-#### DotNetHelper-HttpClient is a simple lightweight library for execute restful requests. Easy Integration with polly. Support both asynchronous and synchronous
+#### DotNetHelper-HttpClient is a simple lightweight library for execute restful requests. Easy Integration with polly. Support both asynchronous and synchronous operation
 
 || [**Change Log**][Changelogs] • || [**View on Github**][Github]|| 
 
@@ -15,12 +15,42 @@
 | **Azure Devops** | ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] | 
 
 ## Features
+
+* All apis are available in both asynchronous and synchronous operation
+
+#### Get string from rest api
 ~~~csharp
-var client = new RestClient(Encoding.UTF8);
-var json = client.ExecuteGetResponse("https://jsonplaceholder.typicode.com/todos/1", Method.Get);
-var jsonObject = JsonConvert.DeserializeObject<JsonObject>(json);
+var client = new RestClient();
+var json = client.GetString($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
 ~~~
-## Getting Started
+
+#### Get Stream from rest api
+~~~csharp
+var client = new RestClient();
+var stream = client.GetStream($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
+
+#### Get bytes[] from rest api
+~~~csharp
+var client = new RestClient();
+var bytes = client.GetBytes($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
+
+#### Get HttpResposne from rest api
+~~~csharp
+var client = new RestClient();
+var httpResponse = client.GetStream($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
+
+#### Get Generic Type from rest api
+~~~csharp
+var client = new RestClient();
+// The first parameter takes a Func<string, T> this allows you to implement your own deserializer 
+// In doing this allows this library to not depend on third party libraries which locks 
+// developer to using certain version
+var employee = client.Get(JsonConvert.DeserializeObject<Employee>,$"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
+~~~
+
 
 ## Documentation
 For more information, please refer to the [Officials Docs][Docs]

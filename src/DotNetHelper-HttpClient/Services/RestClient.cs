@@ -1,65 +1,38 @@
 ﻿// NOTES :: https://visualstudiomagazine.com/blogs/tool-tracker/2019/09/using-http.aspx
-
 //HttpClient is intended to be instantiated once and re-used throughout the life of an application.Especially in server applications,
 //creating a new HttpClient instance for every request will exhaust the number of sockets available under heavy loads
 //This will result in SocketException errors.
-
-
 
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using DotNetHelper_HttpClient.Enum;
 using DotNetHelper_HttpClient.Extension;
 using DotNetHelper_HttpClient.Helpers;
+using DotNetHelper_HttpClient.Interface;
 using DotNetHelper_HttpClient.Models;
 
 
 namespace DotNetHelper_HttpClient.Services
 {
+ 
+
     /// <summary>
     /// A Awesome Class For Restful Api Calls & And Downloading Files HttpRestfulClient.
     /// </summary>
-    public class RestClient
+    public class RestClient : HttpClient, IRestClient
     {
 
-
-        /// <summary>
-        /// Gets or sets the handler.
-        /// </summary>
-        /// <value>The handler.</value>
-        public HttpClientHandler Handler { get; set; } = new HttpClientHandler();
-        /// <summary>
-        /// Gets or sets a value indicating whether [reuse handler].
-        /// </summary>
-        /// <value><c>true</c> if [reuse handler]; otherwise, <c>false</c>.</value>
-        private static bool ReuseHandler { get; } = false;
-
-        /// <summary>
-        /// Gets or sets the default timeout.
-        /// </summary>
-        /// <value>The default timeout.</value>
-        public TimeSpan DefaultTimeout { get; set; } = TimeSpan.FromSeconds(60);
-        /// <summary>
-        /// Gets or sets the encoding.
-        /// </summary>
-        /// <value>The encoding.</value>
-        public Encoding Encoding { get; set; } = Encoding.UTF8;
         /// <summary>
         /// Gets or sets a value indicating whether [always ensure success code].
         /// </summary>
         /// <value><c>true</c> if [always ensure success code]; otherwise, <c>false</c>.</value>
-        public bool AlwaysEnsureSuccessCode { get; set; } = true;
+        public bool AlwaysEnsureSuccessCode { get; set; } = false;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public HttpClient Client { get; private set; }
 
         /// <summary>
         /// A func that will return a httpresponsemessage this method is used to integrate with polly
@@ -67,28 +40,20 @@ namespace DotNetHelper_HttpClient.Services
         public Func<Task<HttpResponseMessage>> HttpRequestExecuteAsync { get; set; }
 
 
+        public RestClient(HttpMessageHandler httpClientHandler, bool disposeHandler) : base(httpClientHandler,disposeHandler)
+        {
+          
+        }
+
+        public RestClient(HttpMessageHandler httpClientHandler) : base(httpClientHandler)
+        {
+
+        }
+
         public RestClient()
         {
-            Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
+
         }
-
-        public RestClient(Encoding encoding)
-        {
-            Encoding = encoding;
-            Client = new HttpClient(Handler, ReuseHandler) { Timeout = DefaultTimeout };
-        }
-
-
-        public void ReInitialize(HttpClientHandler handle, bool reuseHandler)
-        {
-            Client = new HttpClient(handle, reuseHandler) { Timeout = DefaultTimeout };
-        }
-
-
-
-
-
-
 
 
         /// <summary>
@@ -131,7 +96,7 @@ namespace DotNetHelper_HttpClient.Services
             }
             else
             {
-                return await Client.SendAsync(request);
+                return await SendAsync(request);
             }
         }
 
@@ -160,7 +125,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public async Task<string> GetStringAsync(string url,  Method method, HttpContent content = null)
+        public async Task<string> GetStringAsync(string url, Method method, HttpContent content = null)
         {
             return await GetStringAsync(url, null, null, Method.Get, null);
         }
@@ -203,13 +168,13 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// execute get response as an synchronous operation.
         /// </summary>
-        /// <param name="baseurl">The baseurl.</param>
+        /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public string GetString(string baseurl, Method method, HttpContent content = null)
+        public string GetString(string url, Method method, HttpContent content = null)
         {
-            return GetString(baseurl, null, null, method, content);
+            return GetString(url, null, null, method, content);
         }
 
 
@@ -260,7 +225,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
         public HttpResponseMessage GetHttpResponse(string url, Method method, HttpContent content = null)
         {
-            return GetHttpResponse(url, null,null,method, content);
+            return GetHttpResponse(url, null, null, method, content);
         }
 
         /// <summary>
@@ -330,7 +295,7 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;Stream&gt;.</returns>
-        public Stream GetStream(string url,Method method, HttpContent content = null)
+        public Stream GetStream(string url, Method method, HttpContent content = null)
         {
             return GetStream(url, null, null, method, content);
         }
@@ -494,7 +459,7 @@ namespace DotNetHelper_HttpClient.Services
 
         #endregion
 
-        
+
 
         /// <summary>
         /// Downloads the file.
