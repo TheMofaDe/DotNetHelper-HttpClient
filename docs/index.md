@@ -1,6 +1,6 @@
-# DotNetHelper-HttpClient
+# $safeprojectname$
 
-#### *DotNetHelper-HttpClient takes your generic types or dynamic & anonymous objects and convert it to sql.* 
+#### *$safeprojectname$ takes your generic types or dynamic & anonymous objects and convert it to sql.* 
 
 || [**View on Github**][Github] || 
 
@@ -60,7 +60,7 @@ INSERT INTO TableNameGoHere ([FirstName],[LastName]) VALUES (@FirstName,@LastNam
 <!-- Links. -->
 
 [1]:  https://gist.github.com/davidfowl/ed7564297c61fe9ab814
-[2]: http://themofade.github.io/DotNetHelper-HttpClient
+[2]: http://themofade.github.io/$safeprojectname$
 
 [Cake]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [Azure DevOps]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
@@ -70,12 +70,12 @@ INSERT INTO TableNameGoHere ([FirstName],[LastName]) VALUES (@FirstName,@LastNam
 [Chocolately]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [WiX]: http://wixtoolset.org/
 [DocFx]: https://dotnet.github.io/docfx/
-[Github]: https://github.com/TheMofaDe/DotNetHelper-HttpClient
+[Github]: https://github.com/TheMofaDe/$safeprojectname$
 
 
 <!-- Documentation Links. -->
-[Docs]: https://themofade.github.io/DotNetHelper-HttpClient/index.html
-[Docs-API]: https://themofade.github.io/DotNetHelper-HttpClient/api/DotNetHelper-HttpClient.Attribute.html
-[Docs-Tutorials]: https://themofade.github.io/DotNetHelper-HttpClient/tutorials/index.html
+[Docs]: https://themofade.github.io/$safeprojectname$/index.html
+[Docs-API]: https://themofade.github.io/$safeprojectname$/api/$safeprojectname$.Attribute.html
+[Docs-Tutorials]: https://themofade.github.io/$safeprojectname$/tutorials/index.html
 [Docs-samples]: https://dotnet.github.io/docfx/
 [Changelogs]: https://dotnet.github.io/docfx/

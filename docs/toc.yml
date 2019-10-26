@@ -7,7 +7,7 @@
 - name: Tutorials
   href: ~/tutorials/index.html
 - name: API
-  href: ~/api/DotNetHelper-HttpClient.html  # if your project contains a dash it will need to be replace with a underscore on this line only
+  href: ~/api/DotNetHelper_HttpClient.html  # if your project contains a dash it will need to be replace with a underscore on this line only
 - name: Change Log
   href: https://github.com/TheMofaDe/DotNetHelper-HttpClient/blob/master/CHANGELOG.md
 - name: Github
