@@ -1,60 +1,48 @@
-# $safeprojectname$
+# DotNetHelper-HttpClient
 
-#### *$safeprojectname$ takes your generic types or dynamic & anonymous objects and convert it to sql.* 
+#### DotNetHelper-HttpClient is a simple lightweight library for execute restful requests. Easy Integration with polly. Support both asynchronous and synchronous operation
 
 || [**View on Github**][Github] || 
 
 
 ## Features
-+ INSERT
-+ UPDATE
-+ DELETE
-+ UPSERT
-+ INSERT with OUTPUT Columns
-+ UPDATE with OUTPUT Columns
-+ DELETE with OUTPUT Columns
-+ UPSERT with OUTPUT Columns
 
-## Supported Databases
-+ SQLSERVER
-+ SQLITE
-+ MYSQL
-+ More to come
+* All apis are available in both asynchronous and synchronous operation
 
+#### Get string from rest api
+~~~csharp
+var client = new RestClient();
+var json = client.GetString($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
 
-## How to use
-##### How to Use With Generics Types
-```csharp
-public class Employee {
-      public FirstName { get; set; }
-      public LastName  { get; set; }
-}
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            var insertSql = sqlServerObjectToSql.BuildQuery<Employee>("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert);
-// OR 
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,typeof(Employee));
-```
+#### Get Stream from rest api
+~~~csharp
+var client = new RestClient();
+var stream = client.GetStream($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
 
-##### How to Use With Dynamic Objects
-```csharp
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            dynamic record = new ExpandoObject();
-            record.FirstName = "John";
-            record.LastName = "Doe";
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,record);
-```
+#### Get bytes[] from rest api
+~~~csharp
+var client = new RestClient();
+var bytes = client.GetBytes($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
+
+#### Get HttpResponseMessage from rest api
+~~~csharp
+var client = new RestClient();
+var httpResponse = client.GetHttpResponse($"https://jsonplaceholder.typicode.com/todos/1",  Method.Get);
+~~~
+
+#### Get Generic Type from rest api
+~~~csharp
+var client = new RestClient();
+// The first parameter takes a Func<string, T> this allows you to implement your own deserializer 
+// In doing this allows this library to not depend on third party libraries which locks 
+// developer to using certain version
+var employee = client.Get(JsonConvert.DeserializeObject<Employee>,$"https://jsonplaceholder.typicode.com/todos/1", Method.Get);
+~~~
 
 
-##### How to Use With Anonymous Objects
-```csharp
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            var anonymousObject = new { FirstName = "John" , LastName = "Doe"}
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,anonymousObject);
-```
-##### Output
-```sql
-INSERT INTO TableNameGoHere ([FirstName],[LastName]) VALUES (@FirstName,@LastName)
-```
 
 
 <!-- Links. -->
