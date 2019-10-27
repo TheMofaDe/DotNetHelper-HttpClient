@@ -6,7 +6,7 @@ using DotNetHelper_HttpClient.Services;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace DotNetHelper_HttpClient_Tests
+namespace DotNetHelper.HttpClient.Tests
 {
     [TestFixture]
     public class RestClientShould

@@ -5,7 +5,7 @@ using DotNetHelper_HttpClient.Helpers;
 using DotNetHelper_HttpClient.Models;
 using NUnit.Framework;
 
-namespace DotNetHelper_HttpClient_Tests
+namespace DotNetHelper.HttpClient.Tests
 {
     [TestFixture]
     public class UrlBuilderTests

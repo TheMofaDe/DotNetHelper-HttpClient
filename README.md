@@ -80,8 +80,8 @@ For more information, please refer to the [Officials Docs][Docs]
 [nuget-downloads]: https://img.shields.io/nuget/dt/DotNetHelper-HttpClient.svg?style=flat-square
 [tests]: https://img.shields.io/appveyor/tests/TheMofaDe/DotNetHelper-HttpClient.svg?style=flat-square
 [coverage-status]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper-HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=Windows
-[azure-windows]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper-HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=Windows
-[azure-linux]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper-HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=Linux
-[azure-macOS]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper-HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=macOS
+[azure-windows]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=Windows
+[azure-linux]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=Linux
+[azure-macOS]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.HttpClient/_apis/build/status/TheMofaDe.DotNetHelper-HttpClient?branchName=master&jobName=macOS
 [app-veyor]: https://ci.appveyor.com/project/TheMofaDe/DotNetHelper-HttpClient
 
