@@ -1,8 +1,12 @@
 variables:
-  DOTNET_SDK_VERSION: '3.0.100'
-  DOTNET_PACKAGE_TYPE: 'sdk'
-  RUBY_VERSION: '2.5'
-  group: EnvironmentVariables
+- group: EnvironmentVariables
+- name:  DOTNET_SDK_VERSION 
+  value: '3.0.100'
+- name:  DOTNET_PACKAGE_TYPE
+  value: 'sdk'
+- name:  RUBY_VERSION
+  value: '2.5'
+
   
 jobs:
 - template: build/tmpl/jobs.yml
