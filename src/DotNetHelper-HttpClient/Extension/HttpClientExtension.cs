@@ -1,9 +1,4 @@
-﻿// NOTES :: https://visualstudiomagazine.com/blogs/tool-tracker/2019/09/using-http.aspx
-//HttpClient is intended to be instantiated once and re-used throughout the life of an application.Especially in server applications,
-//creating a new HttpClient instance for every request will exhaust the number of sockets available under heavy loads
-//This will result in SocketException errors.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,65 +6,33 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using DotNetHelper_HttpClient.Enum;
-using DotNetHelper_HttpClient.Extension;
 using DotNetHelper_HttpClient.Helpers;
-using DotNetHelper_HttpClient.Interface;
 using DotNetHelper_HttpClient.Models;
 
-
-namespace DotNetHelper_HttpClient.Services
+namespace DotNetHelper_HttpClient.Extension
 {
-
-
-    /// <summary>
-    /// A Awesome Class For Restful Api Calls & And Downloading Files HttpRestfulClient.
-    /// </summary>
-    public class RestClient : HttpClient, IRestClient
+    public static class HttpClientExtension
     {
 
-        /// <summary>
-        /// Gets or sets a value indicating whether [always ensure success code].
-        /// </summary>
-        /// <value><c>true</c> if [always ensure success code]; otherwise, <c>false</c>.</value>
-        public bool AlwaysEnsureSuccessCode { get; set; } = false;
-
-
-        /// <summary>
-        /// A func that will return a httpresponsemessage this method is used to integrate with polly
-        /// </summary>
-        public Func<Task<HttpResponseMessage>> HttpRequestExecuteAsync { get; set; }
-
-
-        public RestClient(HttpMessageHandler httpClientHandler, bool disposeHandler) : base(httpClientHandler, disposeHandler)
-        {
-
-        }
-
-        public RestClient(HttpMessageHandler httpClientHandler) : base(httpClientHandler)
-        {
-
-        }
-
-        public RestClient()
-        {
-
-        }
+        public static bool AlwaysEnsureSuccessCode { get; set; }
 
 
         /// <summary>
         /// Sends a HttpRequest and returns a reponse as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="method">The method.</param>
         /// <param name="url">The URL.</param>
         /// <param name="headers"></param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        private async Task<HttpResponseMessage> SendAsync(Method method, string url, List<Parameter> headers, HttpContent content = null)
+        private static async Task<HttpResponseMessage> SendAsync(this HttpClient httpClient, Method method, string url, List<Parameter> headers, HttpContent content = null)
         {
             var request = new HttpRequestMessage(HttpMethod.Options, url)
             {
                 Content = content
-               ,Method = method.MapToHttpMethod()
+               ,
+                Method = method.MapToHttpMethod()
             };
             if (!headers.IsNullOrEmpty())
             {
@@ -87,29 +50,22 @@ namespace DotNetHelper_HttpClient.Services
                 }
 
             }
-
-            if (HttpRequestExecuteAsync != null)
-            {
-                return await HttpRequestExecuteAsync.Invoke();
-            }
-            else
-            {
-                return await SendAsync(request);
-            }
+            return await httpClient.SendAsync(request);
         }
 
 
         /// <summary>
         /// do work as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="method">The method.</param>
         /// <param name="url">The URL.</param>
         /// <param name="headers"></param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        private HttpResponseMessage Send(Method method, string url, List<Parameter> headers, HttpContent content = null)
+        private static HttpResponseMessage Send(this HttpClient httpClient, Method method, string url, List<Parameter> headers, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => SendAsync(method, url, headers, content));
+            return AsyncHelper.RunSync(() => SendAsync(httpClient,method, url, headers, content));
         }
 
 
@@ -119,30 +75,32 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// execute get response as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The url.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public async Task<string> GetStringAsync(string url, Method method, HttpContent content = null)
+        public static async Task<string> GetStringAsync(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return await GetStringAsync(url, null, null, Method.Get, null);
+            return await GetStringAsync(httpClient,url, null, null, Method.Get, null);
         }
 
         /// <summary>
         /// execute get response as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param> 
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public async Task<string> GetStringAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static async Task<string> GetStringAsync(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
             baseurl.IsNullThrow(nameof(baseurl));
             var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await SendAsync(method, url, headers, content);
+            var response = await SendAsync(httpClient,method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
             return result;
@@ -152,27 +110,29 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// execute get response as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public string GetString(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static string GetString(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => GetStringAsync(baseurl, resource, headers, method, content));
+            return AsyncHelper.RunSync(() => GetStringAsync(httpClient,baseurl, resource, headers, method, content));
         }
 
         /// <summary>
         /// execute get response as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.String&gt;.</returns>
-        public string GetString(string url, Method method, HttpContent content = null)
+        public static string GetString(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return GetString(url, null, null, method, content);
+            return GetString(httpClient,url, null, null, method, content);
         }
 
 
@@ -184,30 +144,32 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get HTTP response as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The url.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        public async Task<HttpResponseMessage> GetHttpResponseAsync(string url, Method method, HttpContent content = null)
+        public static async Task<HttpResponseMessage> GetHttpResponseAsync(this HttpClient httpClient,string url, Method method, HttpContent content = null)
         {
-            return await GetHttpResponseAsync(url, null, null, method, content);
+            return await GetHttpResponseAsync(httpClient,url, null, null, method, content);
         }
 
         /// <summary>
         /// Execute get HTTP response as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        public async Task<HttpResponseMessage> GetHttpResponseAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static async Task<HttpResponseMessage> GetHttpResponseAsync(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
             baseurl.IsNullThrow(nameof(baseurl));
             var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await SendAsync(method, url, headers, content);
+            var response = await SendAsync(httpClient,method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             return response;
         }
@@ -217,27 +179,29 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get HTTP response as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        public HttpResponseMessage GetHttpResponse(string url, Method method, HttpContent content = null)
+        public static HttpResponseMessage GetHttpResponse(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return GetHttpResponse(url, null, null, method, content);
+            return GetHttpResponse(httpClient,url, null, null, method, content);
         }
 
         /// <summary>
         /// Execute get HTTP response as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;HttpResponseMessage&gt;.</returns>
-        public HttpResponseMessage GetHttpResponse(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static HttpResponseMessage GetHttpResponse(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => GetHttpResponseAsync(baseurl, resource, headers, method, content));
+            return AsyncHelper.RunSync(() => GetHttpResponseAsync(httpClient,baseurl, resource, headers, method, content));
         }
 
 
@@ -249,32 +213,34 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get stream as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The url.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;Stream&gt;.</returns>
-        public async Task<Stream> GetStreamAsync(string url, Method method, HttpContent content = null)
+        public static async Task<Stream> GetStreamAsync(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return await GetStreamAsync(url, null, null, method, content);
+            return await GetStreamAsync(httpClient,url, null, null, method, content);
         }
 
 
         /// <summary>
         /// Execute get stream as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;Stream&gt;.</returns>
-        public async Task<Stream> GetStreamAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static async Task<Stream> GetStreamAsync(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
             baseurl.IsNullThrow(nameof(baseurl));
             var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await SendAsync(method, url, headers, content);
+            var response = await SendAsync(httpClient,method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
             var stream = await response.Content.ReadAsStreamAsync();
@@ -289,28 +255,30 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get stream as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;Stream&gt;.</returns>
-        public Stream GetStream(string url, Method method, HttpContent content = null)
+        public static Stream GetStream(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return GetStream(url, null, null, method, content);
+            return GetStream(httpClient,url, null, null, method, content);
         }
 
 
         /// <summary>
         /// Execute get stream as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;Stream&gt;.</returns>
-        public Stream GetStream(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static Stream GetStream(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => GetStreamAsync(baseurl, resource, headers, method, content));
+            return AsyncHelper.RunSync(() => GetStreamAsync(httpClient,baseurl, resource, headers, method, content));
         }
 
         #endregion
@@ -321,31 +289,33 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get bytes as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.Byte[]&gt;.</returns>
-        public async Task<byte[]> GetBytesAsync(string url, Method method, HttpContent content = null)
+        public static async Task<byte[]> GetBytesAsync(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return await GetBytesAsync(url, null, null, method, content);
+            return await GetBytesAsync(httpClient,url, null, null, method, content);
         }
 
         /// <summary>
         /// Execute get bytes as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.Byte[]&gt;.</returns>
-        public async Task<byte[]> GetBytesAsync(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static async Task<byte[]> GetBytesAsync(this HttpClient httpClient, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
 
             baseurl.IsNullThrow(nameof(baseurl));
             var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await SendAsync(method, url, headers, content);
+            var response = await SendAsync(httpClient,method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             await response.Content.LoadIntoBufferAsync();
             var bytes = await response.Content.ReadAsByteArrayAsync();
@@ -358,28 +328,30 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Execute get bytes as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The baseurl.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.Byte[]&gt;.</returns>
-        public byte[] GetBytes(string url, Method method, HttpContent content = null)
+        public static byte[] GetBytes(this HttpClient httpClient, string url, Method method, HttpContent content = null)
         {
-            return GetBytes(url, null, null, method, content);
+            return GetBytes(httpClient,url, null, null, method, content);
         }
 
 
         /// <summary>
         /// Execute get bytes as an synchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
         /// <param name="headers">The headers.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;System.Byte[]&gt;.</returns>
-        public byte[] GetBytes(string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static byte[] GetBytes(HttpClient httpClient,string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => GetBytesAsync(baseurl, resource, headers, method, content));
+            return AsyncHelper.RunSync(() => GetBytesAsync(httpClient,baseurl, resource, headers, method, content));
         }
 
         #endregion
@@ -391,20 +363,22 @@ namespace DotNetHelper_HttpClient.Services
         /// execute get type as an asynchronous operation.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="httpClient"></param>
         /// <param name="deserializer"></param>
         /// <param name="url">The url.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public async Task<T> GetAsync<T>(Func<string, T> deserializer, string url, Method method, HttpContent content = null)
+        public static async Task<T> GetAsync<T>(this HttpClient httpClient, Func<string, T> deserializer, string url, Method method, HttpContent content = null)
         {
-            return await GetAsync(deserializer, url, null, null, method, content);
+            return await GetAsync(httpClient,deserializer, url, null, null, method, content);
         }
 
         /// <summary>
         /// execute get type as an asynchronous operation.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="httpClient"></param>
         /// <param name="deserializer"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
@@ -412,12 +386,12 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public async Task<T> GetAsync<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static async Task<T> GetAsync<T>(this HttpClient httpClient,Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
             baseurl.IsNullThrow(nameof(baseurl));
             var url = URLHelper.CreateUrl(baseurl, resource, headers);
 
-            var response = await SendAsync(method, url, headers, content);
+            var response = await SendAsync(httpClient,method, url, headers, content);
             EnsureSuccessCodeAsync(response);
             var result = await response.Content.ReadAsStringAsync();
             return deserializer.Invoke(result);
@@ -428,20 +402,22 @@ namespace DotNetHelper_HttpClient.Services
         /// execute get type as an synchronous operation.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="httpClient"></param>
         /// <param name="deserializer"></param>
         /// <param name="url">The url.</param>
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public T Get<T>(Func<string, T> deserializer, string url, Method method, HttpContent content = null)
+        public static T Get<T>(this HttpClient httpClient, Func<string, T> deserializer, string url, Method method, HttpContent content = null)
         {
-            return Get<T>(deserializer, url, null, null, method, content);
+            return Get(httpClient,deserializer, url, null, null, method, content);
         }
 
         /// <summary>
         /// execute get type as an synchronous operation.
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="httpClient"></param>
         /// <param name="deserializer"></param>
         /// <param name="baseurl">The baseurl.</param>
         /// <param name="resource">The resource.</param>
@@ -449,9 +425,9 @@ namespace DotNetHelper_HttpClient.Services
         /// <param name="method">The method.</param>
         /// <param name="content">The content.</param>
         /// <returns>Task&lt;T&gt;.</returns>
-        public T Get<T>(Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
+        public static T Get<T>(this HttpClient httpClient, Func<string, T> deserializer, string baseurl, string resource, List<Parameter> headers, Method method, HttpContent content = null)
         {
-            return AsyncHelper.RunSync(() => GetAsync(deserializer, baseurl, resource, headers, method, content));
+            return AsyncHelper.RunSync(() => GetAsync(httpClient,deserializer, baseurl, resource, headers, method, content));
         }
 
 
@@ -462,12 +438,13 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Downloads the file.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The URL.</param>
         /// <param name="fileStream"></param>
         /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        public async Task<bool> DownloadFileAsync(string url, FileStream fileStream)
+        public static async Task<bool> DownloadFileAsync(this HttpClient httpClient, string url, FileStream fileStream)
         {
-            using (var content = await GetHttpResponseAsync(url, Method.Get))
+            using (var content = await GetHttpResponseAsync(httpClient,url, Method.Get))
             {
                 if (content == null) return true;
                 await content.Content.CopyToAsync(fileStream);
@@ -480,27 +457,29 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Downloads the file.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The URL.</param>
         /// <param name="fileStream"></param>
         /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
-        public void DownloadFile(string url, FileStream fileStream)
+        public static void DownloadFile(this HttpClient httpClient,string url, FileStream fileStream)
         {
-            AsyncHelper.RunSync(() => DownloadFileAsync(url, fileStream));
+            AsyncHelper.RunSync(() => DownloadFileAsync(httpClient,url, fileStream));
         }
 
 
         /// <summary>
         /// Downloads file from url as an asynchronous operation. 
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The URL.</param>
         /// <param name="fileStream">The filestream that content will be written to</param>
         /// <param name="progress">The progress.</param>
         /// <param name="buffer"></param>
         /// <returns>Task&lt;System.Boolean&gt;.</returns>
-        public async Task DownloadFileAsync(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
+        public static async Task DownloadFileAsync(HttpClient httpClient, string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
         {
             progress.Report(10);
-            using (var response = await GetStreamAsync(url, null, null, Method.Get))
+            using (var response = await GetStreamAsync(httpClient,url, null, null, Method.Get))
             {
                 if (response == null || response.Length <= 0)
                 {
@@ -529,15 +508,17 @@ namespace DotNetHelper_HttpClient.Services
         /// <summary>
         /// Downloads file from url as an asynchronous operation.
         /// </summary>
+        /// <param name="httpClient"></param>
         /// <param name="url">The URL.</param>
         /// <param name="fileStream">The filestream that content will be written to</param>
         /// <param name="progress">The progress.</param>
         /// <param name="buffer"></param>
         /// <returns>Task&lt;System.Boolean&gt;.</returns>
-        public void DownloadFile(string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
+        public static void DownloadFile(this HttpClient httpClient, string url, FileStream fileStream, IProgress<double> progress, byte[] buffer = null)
         {
-            AsyncHelper.RunSync(() => DownloadFileAsync(url, fileStream, progress, buffer));
+            AsyncHelper.RunSync(() => DownloadFileAsync(httpClient, url, fileStream, progress, buffer));
         }
+
 
 
         /// <summary>
@@ -545,20 +526,14 @@ namespace DotNetHelper_HttpClient.Services
         /// </summary>
         /// <param name="response">The response.</param>
         /// <exception cref="Exception"></exception>
-        private void EnsureSuccessCodeAsync(HttpResponseMessage response)
+        private static void EnsureSuccessCodeAsync(HttpResponseMessage response)
         {
             if (AlwaysEnsureSuccessCode)
                 response.EnsureSuccessStatusCode();
         }
 
+
+
+
     }
-
-
-
-
-
-
-
 }
-
-
